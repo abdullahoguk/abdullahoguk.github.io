@@ -1,51 +1,69 @@
-Overflow by HTML5 UP
-html5up.net | @n33co
+Eventually by HTML5 UP
+html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Overflow, a single page responsive site template by me, AJ, for HTML5 UP.
-As you can tell it's a bit unusual (it was inspired by a flowchart I was working
-on a few months back), but I think it'd make for a pretty cool portfolio. Includes
-a pop-up gallery, styling for all basic page elements, a handy configuration
-(see the top of js/init.js), and some experimental stuff I've been messing with
-lately (like the parallax background effect).
-	
-Demo images* courtesy of the talented, the awesome, THE one and only Felicia Simion,
-a photographer whose works will make your head spin in awe. See more of it here:
+Just a simple placeholder template for your kickass app/product/startup/whatever until it
+launches. Includes an email signup form and a cool slideshow background (more on both below).
 
-http://ineedchemicalx.deviantart.com/
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
+you can use for pretty much whatever.
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
+(* = not included)
 
 AJ
-n33.co @n33co dribbble.com/n33
+aj@lkn.io | @ajlkn
+
+
+Signup Form:
+
+	The signup form won't actually do anything (other than report back with a "thank you" message)
+	until you tie it to either a third party service (eg. MailChimp) or your own hosted solution.
+	In either case, there are two ways to go:
+
+	1. The conventional (non-AJAX) way, which pretty much comes down to pointing the form's "action"
+	attribute to your service/script URL. If you go this route, remove the entire "Signup Form" code
+	block from assets/js/main.js (since it's not needed for this approach).
+
+	-or-
+
+	2. The AJAX way. How you set this up is largely dependent on the service/solution you're using
+	so you'll need to consult their/its documentation. However, I have included some basic code
+	(under "Signup Form" in assets/js/main.js) that will at least let you interact with the
+	form itself.
+
+
+Slideshow Background:
+
+	This is pretty straightforward, but there are two JS settings you'll want to be aware of
+	(found under "Slideshow Background" in assets/js/main.js):
+
+	images
+
+		The list of images to cycle through, given in the following format:
+
+			'url': 'alignment'
+
+		Where 'url' is the image (eg. 'images/foo.jpg', 'http://somewhere.else/foo.jpg'), and
+		'alignment' is how the image should be vertically aligned ('top', 'center', or 'bottom').
+
+		Note: Browsers that don't support CSS transitions (like IE<=9) will only see the first image.
+
+	delay
+
+		How long to wait between transitions (in ms). Note that this must be at least twice as long as
+		the transition speed itself (currently 3 seconds).
 
 
 Credits:
 
-	Demo images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-			"Sleepless in Vienna" (ineedchemicalx.deviantart.com/art/Sleepless-in-Vienna-322880007)
-			"Time goes by too fast" (ineedchemicalx.deviantart.com/art/Time-goes-by-too-fast-335982438)
-			"Kingdom of the Wind" (ineedchemicalx.deviantart.com/art/Kingdom-of-the-Wind-348268044)
-			"Ad infinitum" (ineedchemicalx.deviantart.com/art/Ad-infinitum-354203162)
-			"Dressed in Clarity" (ineedchemicalx.deviantart.com/art/Dressed-in-Clarity-331333716)
-			"Raven" (ineedchemicalx.deviantart.com/art/Raven-306468505)
-			"I'll have a cup of Disneyland, please" (ineedchemicalx.deviantart.com/art/I-ll-have-a-cup-of-Disneyland-please-325596442)
-			"Cherish" (ineedchemicalx.deviantart.com/art/Cherish-320041163)
-			"Different." (ineedchemicalx.deviantart.com/art/Different-353708988)
-			"History was made here" (ineedchemicalx.deviantart.com/art/History-was-made-here-366723812)
-			"People come and go and walk away" (ineedchemicalx.deviantart.com/art/People-come-and-go-and-walk-away-284244677)
-			
+	Demo Images:
+		Unsplash (unsplash.com)
+
 	Icons:
 		Font Awesome (fortawesome.github.com/Font-Awesome)
 
 	Other:
-		jQuery (jquery.com)
 		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		jquery.poptrox (n33.co)
-		jquery.scrolly (n33.co)
-		skel (n33.co)
+		Respond.js (j.mp/respondjs)
+		Skel (skel.io)
