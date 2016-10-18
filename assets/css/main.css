@@ -542,23 +542,26 @@
 
 
 #logo{
-width: 25.5em;
+width: 20.5em;
 }
 
 
 #footer .copyright{
 
-	margin-top:3em;
-	margin-bottom:-2em
+margin-top:2%;
+
+
+
 }
 
 
 
 #goodreads{
-font-size: 3em;
+
+font-size: 2.75em;
 font-style: normal;
-font-weight:thin;
-font-family: sans-serif;
+
+font-family: helvetica;
 }
 
 
@@ -572,7 +575,7 @@ font-family: sans-serif;
 
 	ol {
 		list-style: decimal;
-		margin: 0 0 2em 0;
+		margin: 0 0 1em 0;
 		padding-left: 1.25em;
 	}
 
@@ -618,7 +621,7 @@ font-family: sans-serif;
 
 			ul.icons2 li {
 				display: block;
-				padding: 1.2em 1em 0 0;
+				padding: 1.2em 0 0 0;
 			}
 
 				ul.icons2 li:last-child {
@@ -626,7 +629,7 @@ font-family: sans-serif;
 				}
 
 				ul.icons2 li .icon:before {
-					font-size: 2.25em;
+					font-size: 2em;
 				}
 
 				ul.icons2 li a {
@@ -637,8 +640,45 @@ ul.icons2 {
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-			margin-bottom:4em;
+			margin-bottom:3em;
 		}
+
+
+
+ul.icons3 {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+			margin-bottom:1em;
+				margin-top: 2em;
+		}
+
+
+
+
+ul.icons3 li {
+				display: inline-block;
+				padding: 1.2em 1.5em 0 0;
+				margin-bottom: -8em;
+
+
+
+			}
+
+				ul.icons3 li:last-child {
+					padding-right: 1em;
+				}
+
+				ul.icons3 li .icon:before {
+					font-size: 2.25em;
+				}
+
+				ul.icons3 li a {
+					color: inherit;
+				}
+
+
+
 
 /* Form */
 
@@ -1174,7 +1214,7 @@ ul.icons2 {
 		#footer .copyright {
 			font-size: 0.8em;
 			list-style: none;
-			padding: 0;
+			padding: 1em;
 		}
 
 			#footer .copyright li {
