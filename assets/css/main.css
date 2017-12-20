@@ -1,4 +1,6 @@
-@import url(font-awesome.min.css);@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+@import url(font-awesome.min.css);@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block;}
 body{line-height:1;}
 ol, ul{list-style:none;}
@@ -93,10 +95,22 @@ header h6 + p{font-size:0.7em;margin-top:-0.6em;line-height:1.5em;}
 .icon{text-decoration:none;border-bottom:none;position:relative;}
 .icon:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-family:FontAwesome;font-style:normal;font-weight:normal;text-transform:none !important;}
 .icon > .label{display:none;}
-#logo{width:19em;}
+
+
+#title{display: flex;width:100%;align-items:center;}
+#logo{width:3em;}
+#name{font-size:2em!important;color:white;margin:0em;margin-left:.5em;font-family: 'Playfair Display', serif;}
 #footer .copyright{margin-top:1%;}
 #goodreads{font-size:2.25em;font-style:normal;font-family:helvetica;}
 #header .icon{margin-top:0em;}
+.hidden{
+    display:none !important;
+}
+#details{
+    font-size:1em !important;
+    margin-top:1em;
+}
+
 ol{list-style:decimal;margin:0 0 1em 0;padding-left:1.25em;}
 ol li{padding-left:0.25em;}
 ul{list-style:disc;margin:0 0 2em 0;padding-left:1em;}
@@ -106,12 +120,12 @@ ul.icons li{display:inline-block;padding:0 1em 0 0;}
 ul.icons li:last-child{padding-right:0;}
 ul.icons li .icon:before{font-size:2.25em;}
 ul.icons li a{color:inherit;}
-ul.icons2 li{display:block;padding:1em 0 0 0;}
+ul.icons2 li{display:block;padding:.75em 0 0 0;}
 ul.icons2 li:last-child{padding-right:1em;}
-ul.icons2 li .icon:before{font-size:1.5em;}
+ul.icons2 li .icon:before{font-size:1.25em;margin-right:.5em;}
 ul.icons2 li a{color:inherit;}
 ul.icons2{cursor:default;list-style:none;padding-left:0;margin-bottom:1em;}
-ul.icons3{cursor:default;list-style:none;padding-left:0;margin-bottom:1em;margin-top:2em;}
+ul.icons3{cursor:default;list-style:none;padding-left:0;margin-bottom:1em;margin-top:1em;}
 ul.icons3 li{display:inline-block;padding:1.2em 1.5em 0 0;margin-bottom:-8em;}
 ul.icons3 li:last-child{padding-right:1em; }
 ul.icons3 li .icon:before{font-size:1.75em;}
@@ -238,7 +252,7 @@ button,
 }
 #footer{-moz-transition:opacity 0.5s ease-in-out;-webkit-transition:opacity 0.5s ease-in-out;-ms-transition:opacity 0.5s ease-in-out;transition:opacity 0.5s ease-in-out;bottom:4em;color:rgba(255, 255, 255, 0.5);left:4em;opacity:0.5;position:absolute;}
 #footer .icons{margin:0 0 0.5em 0;}
-#footer .copyright{font-size:0.8em;list-style:none;padding:1em;}
+#footer .copyright{font-size:0.55em;list-style:none;padding:0em;}
 #footer .copyright li{border-left:solid 1px rgba(255, 255, 255, 0.25);display:inline-block;line-height:1em;margin:0 0 0 0.75em;padding:0 0 0 0.75em;}
 #footer .copyright li:first-child{border-left:0;margin-left:0;padding-left:0;}
 #footer .copyright a{color:inherit;}
