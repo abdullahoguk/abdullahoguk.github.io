@@ -97,7 +97,7 @@ header h6 + p{font-size:0.7em;margin-top:-0.6em;line-height:1.5em;}
 .icon > .label{display:none;}
 
 
-#title{display: flex;width:100%;align-items:center;}
+#title{display: flex;width:100%;align-items:center;}    
 #logo{width:3em;}
 #name{font-size:2em!important;color:white;margin:0em;margin-left:.5em;font-family: 'Playfair Display', serif;}
 #footer .copyright{margin-top:1%;}
