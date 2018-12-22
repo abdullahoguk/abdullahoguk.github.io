@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/abdullahoguk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://abdullaho.gq
+  * I am abdullahoguk (https://keybase.io/abdullahoguk) on keybase.
+  * I have a public key with fingerprint 01AF 942E F65F 1A19 6163  ABB9 34CD A312 66B1 9A90
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014963337878d94c100c10b43bcaa7840f712629c834275e0905ec4d0c8d113e330a",
+      "fingerprint": "01af942ef65f1a196163abb934cda31266b19a90",
+      "host": "keybase.io",
+      "key_id": "34cda31266b19a90",
+      "kid": "01014963337878d94c100c10b43bcaa7840f712629c834275e0905ec4d0c8d113e330a",
+      "uid": "f996832fc97ef07f5015f1045ca73919",
+      "username": "abdullahoguk"
+    },
+    "service": {
+      "hostname": "abdullaho.gq",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1545513788,
+  "expire_in": 157680000,
+  "prev": "e57051971cbb6f33bdfaa1835dedbbee178aa256e691c079f818a34f5585a191",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUm1QVFUYBuQjYQxyItcKqTtjyAjrPXu/lxnBiI/BQkjLVsjlfpwL14W9+80i
+ooNGAylihKaYGawJDpRA7QRsxmgZJChmgErQNGo0DowMzogwzEZ3mfzT9LMzc+bM
+ed/nec7zvuc9smKZX6g/ftW1UmyvP+Lff5/zy13TklKKcLJQgmhLEQNcOmChAK02
+vUESEC2CAhTgDIlhGEVTtMDgPEBRZXM4xvEsS9E4KlJAQ2oYnsZwDUVAlEEJyOMC
+ytMCABjEMJRF4hBRMuZDi8kiGW1LsqzI4BookoQIWMCQgMRYjmMwnBdYTNEjOcCw
+DKoQC2Srj6GY41grVEuyElMu+iV7/4H/n33bl+REhiFpTCPyDAVFlBIJFCjGUZzg
+WQpjAOMDWqHFyBZBBc1ygr2wkC2Q8+0GpCwOUTIOiYe+5vqq+TdKnW9W+CaLbJN5
+uVDJFNhsJqvWx7SVmHzQYsjp/xHRc5JRUHqpMBzQYpVkI6IFCpK3ST5VQOAEAZSi
+6TgEOk2SBeolH4KgSBpVlu8d6FAkIUHlogRgKMBzHCliGCeILAtojBCgwHEQAopm
+WQ1BQpIBPEoxIg1oFsNFgqAJ5ccA4qvLbJQRLab4ZPMVTauUb2RtdgtEykKrArBA
+P/9Qv6jnXg70P1+nntU/v5rlW7qezF9QgG/4/EKXRzyJ5A2He6NvFl9+11n8W2d2
+068fn2ngYcz04N346KGWnoQs77BHlVXXcTAh2HovyNZ1kd3QIHw0OvdXtWV9sD13
+omHueLPm2VXZSYnmsUH8QN+9hdIg1/D6BV1UrztnMfrOZ56HBmfe+I2jjnfMpurJ
+og+hunfjieTwLe01aVu9U9+3OQ/c+iTjwY1ae9/tycbhCIgNvcCT0xfCBlqbY3rj
+isa3dTR9Pp+WM6rqXbg14nicQ31lbioTImp/zHP/BM4ldjw6vOlsUXJIoHfDTFZn
+4+NHl4fNW9Nq3jra19azstubJOvmUzyRb+hyT9bF73rdqnOu1Y2May8dD3HOBI4e
+Cg8NRlMXpypzx9qc18tjZu+eHrOGtZiyVfczVkc+rdKRY2eqY23bv5sGg894rm1S
+T064Jgp/1xkiR0NCPg2okU892N950FQff26PdV932Jhn9x+pzT837b15NqXi7X3L
+ztevnTm14+pGnj9NRSXLlQ0DOe3br8+JQ5l56i0Ve9yBmOfO4jevlrtbLsk7qxx/
+rku35y3PvFYSvC2T7Nq1O70scb748EMk/ZcVX7zydUHPlOrKmsrY/h9GvzWs8za/
+eOIY11rJJVnmA1o9M7HHRtw73hO7PTWv7U91qVrfJ907a2tn3enespc6wl0VE28e
+unLx5IU+YdVT/Zu/TCjaW9Woyrg9K4SpBjZ/UP43
+=c5+5
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/abdullahoguk
+
+==================================================================
+
