@@ -60,14 +60,15 @@
   kind: design
   role: Tasarım & geliştirme
   summary:
-    tr: Latin harfleriyle kare kûfî (makılî) üreten web uygulaması; SVG ve PNG çıktı verir.
-    en: Square Kufic lettering from Latin text, on a unit grid. Exports SVG and PNG.
+    tr: Latin harfleriyle yazılan metni kare kûfî (makılî) yazıya çeviren web uygulaması.
+    en: Turns Latin text into square Kufic lettering.
   repo: https://github.com/abdullahoguk/makili-generator
   stack:
     - JavaScript
     - SVG
   featured: true
   schema: SoftwareApplication
+  image: /img/projects/makili-generator/app.webp
 - id: tr-geo-picker
   title: TR Geo Picker
   year: "2026"
