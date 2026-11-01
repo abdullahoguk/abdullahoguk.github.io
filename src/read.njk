@@ -7,14 +7,14 @@ description: "Books Abdullah Öğük is reading and has read. Okuduğum ve okuma
 ---
 <header class="page-head">
   <h1>okuduklarım<span class="en" lang="en">read</span></h1>
-  <p class="muted">{{ reading.read.length }} kitap, okuduğum yıla göre. Rafın tamamı <a href="{{ reading.profile }}" rel="me noopener">goodreads</a>'te.<span class="en" lang="en">Books by the year I finished them.</span></p>
+  <p class="muted">{{ reading.read.length | roundDown }}+ kitap, okuduğum yıla göre. Rafın tamamı <a href="{{ reading.profile }}" rel="me noopener">goodreads</a>'te.<span class="en" lang="en">Books by the year I finished them.</span></p>
 </header>
 
 {%- macro book(b) -%}
 <li>
   {% if b.url %}<a href="{{ b.url }}" rel="noopener">{{ b.title }}</a>{% else %}<span>{{ b.title }}</span>{% endif %}
-  <span class="muted">{{ b.author }}</span>
   {%- if b.rating %} <span class="rating" aria-label="{{ b.rating }} / 5">{{ b.rating | stars }}</span>{% endif %}
+  {%- if b.author %}<span class="sub">{{ b.author }}</span>{% endif %}
   {%- if b.note %}<span class="sub">{{ b.note }}</span>{% endif %}
 </li>
 {%- endmacro -%}

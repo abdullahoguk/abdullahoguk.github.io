@@ -93,6 +93,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("where", (arr, key, value) =>
     (arr || []).filter((item) => item && item[key] === value)
   );
+  // 131 → 130, 154 → 150 (shown as "130+")
+  eleventyConfig.addFilter("roundDown", (n, step = 10) => Math.floor((Number(n) || 0) / step) * step);
   eleventyConfig.addFilter("fixed1", (n) => (Number.isFinite(Number(n)) ? Number(n).toFixed(1) : n));
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));
   eleventyConfig.addFilter("whereIn", (arr, key, values) => (arr || []).filter((item) => values.includes(item?.[key] ?? "active")));

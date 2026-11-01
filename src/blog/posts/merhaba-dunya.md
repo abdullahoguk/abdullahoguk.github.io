@@ -1,20 +1,13 @@
 ---
 title: "Merhaba, yeni site"
-description: "Siteyi neden ve nasıl yeniden yaptım — Eleventy, düz YAML dosyaları ve rüzgârda savrulan ASCII yapraklar."
+description: "Kişisel sitemi Eleventy ile statik olarak yeniden yaptım. İçerik düz dosyalarda duruyor."
 date: 2026-11-01
 lang: tr
 tags: [post, meta]
 ---
 
-Kişisel sitemi sadeleştirdim. Yönetim paneli yok, veritabanı yok: her şey
-`src/_data/` altındaki birkaç YAML dosyası ve `src/blog/posts/` altındaki
-Markdown yazıları.
+Kişisel sitemi baştan yaptım. Site artık Eleventy ile üretilen statik bir site ve Cloudflare Pages'te yayında.
 
-## Neden?
+Sitede projelerim, okuduğum kitaplar, izlediğim diziler ve filmler, dinlediğim müzikler, kullandığım araçlar ve biriktirdiğim linkler var. Bu içeriklerin hepsi birkaç YAML dosyasında, yazılar da Markdown dosyalarında duruyor. Bir şeyi güncellemek için ilgili dosyayı düzenleyip göndermem yeterli.
 
-- **Hız.** Statik HTML, birkaç kilobaytlık CSS ve tek bir canvas.
-- **Sahiplik.** İçerik düz metin, git'te duruyor.
-- **Sükûnet.** Arka planda bozkırda rüzgâr; yapraklar savruluyor, biri de oturmuş seyrediyor.
-
-> In English, briefly: a quiet, static rewrite. Content is plain files, the
-> background is a little ASCII steppe where leaves drift past someone watching.
+Bundan sonra burada ara ara yazılar paylaşacağım.
