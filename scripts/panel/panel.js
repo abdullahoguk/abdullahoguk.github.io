@@ -140,7 +140,6 @@ const TABS = [
       }),
       obj("tekke", "tekke musikisi", [
         text("title", "başlık"), bi("blurb", "açıklama"),
-        obj("playlist", "playlist", [text("title", "ad"), text("platform", "platform"), url("url")]),
         list("links", "hesaplar", linkItem),
       ]),
       list("profiles", "profiller", linkItem),

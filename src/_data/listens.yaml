@@ -3,7 +3,7 @@
 #    blurb      sayfanın başındaki cümle { tr, en }
 #    playlists  {title, note, platform, url, featured}
 #               featured: true → ana sayfada da görünür
-#    tekke      Tekke Musikisi: hobi olarak yürüttüğüm arşiv hesapları
+#    tekke      Tekke Musikisi: hobi olarak yürüttüğüm arşiv; links sırasıyla listelenir
 #    profiles   dinleme profillerim
 # ─────────────────────────────────────────────────────────────
 blurb:
@@ -21,17 +21,14 @@ playlists:
     url: https://www.youtube.com/playlist?list=PLDlIcx61WS7F6QI-yMTToHmPFCra_AEYb
     featured: true
   - title: Soul/Blues/Jazz etc.
-    note: ""
     platform: youtube
     url: https://www.youtube.com/playlist?list=PLDlIcx61WS7Hj87otOjSa7yrrpWxOvRtQ
     featured: true
   - title: Yabancı (Diğer)
-    note: ""
     platform: youtube
     url: https://www.youtube.com/playlist?list=PLDlIcx61WS7EP1oI2MMjV20SO7urIMkkf
     featured: false
   - title: Yabancı (Doğu)
-    note: ""
     platform: youtube
     url: https://www.youtube.com/playlist?list=PLDlIcx61WS7Ekwt17s1Kfd38j1rDrhUEW
     featured: false
@@ -43,18 +40,17 @@ playlists:
 tekke:
   title: Tekke Musikisi
   blurb:
-    tr: Tekke ve tasavvuf musikisi kayıtlarını derleyip paylaştığım bir hobi arşivi; ilahi, durak, nefes.
+    tr: Tekke ve tasavvuf musikisi kayıtlarını derleyip paylaştığım bir hobi arşivi; kaside, ilahi, durak, nefes.
     en: A hobby archive of Sufi lodge music — hymns, recordings and stories.
-  playlist:
-    title: Tekke Musikisi
-    platform: youtube
-    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7GYsf5P_xjwQpjABdOJUJL1
   links:
     - label: youtube
       handle: "@tekke-musikisi"
       url: https://www.youtube.com/@tekke-musikisi
+    - label: playlist
+      handle: youtube
+      url: https://www.youtube.com/playlist?list=PLDlIcx61WS7GYsf5P_xjwQpjABdOJUJL1
     - label: soundcloud
-      handle: tekkemusikisi
+      handle: "@tekkemusikisi"
       url: https://soundcloud.com/tekkemusikisi/
     - label: instagram
       handle: "@tekke.musikisi"

@@ -31,7 +31,6 @@ description: "Abdullah Öğük ne dinliyor: ağırlıkla klasik Türk musikisi (
   <div>
     <p class="blurb">{{ t.blurb | bi | safe }}</p>
     <ul class="rows">
-      {%- if t.playlist %}<li><a href="{{ t.playlist.url }}" rel="noopener">{{ t.playlist.title }}</a> <span class="muted">{{ t.playlist.platform }} playlist</span></li>{% endif %}
       {%- for l in t.links %}
       <li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a> <span class="muted">{{ l.handle }}</span></li>
       {%- endfor %}
