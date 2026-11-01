@@ -54,7 +54,6 @@ skills:
   - group: Languages
     items:
       - JavaScript
-      - TypeScript
       - HTML
       - CSS
       - Python
