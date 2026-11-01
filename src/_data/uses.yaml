@@ -1,0 +1,108 @@
+# ─────────────────────────────────────────────────────────────
+#  /uses — kullandığım cihazlar, ekipman, yazılımlar
+#    photo   sayfanın başında tek bir masa / ekipman fotoğrafı (opsiyonel)
+#    groups  kategori başlıkları → items[{name, note?, url?, image?}]
+#            image: o ürünün tek fotoğrafı (opsiyonel, /img/uses/... yolu)
+# ─────────────────────────────────────────────────────────────
+photo: ""
+groups:
+  - title:
+      tr: masa
+      en: desk
+    items:
+      - name: ASUS Vivobook Pro 15 OLED
+        note: her gün · daily driver
+      - name: Philips Evnia 27"
+        note: monitör
+      - name: North Bayou monitör standı
+      - name: Aigo A87
+        note: mekanik klavye
+      - name: Logitech M590
+        note: sessiz fare
+      - name: Seduna Benin Fab
+        note: ofis koltuğu
+  - title:
+      tr: kamera
+      en: camera
+    items:
+      - name: Fujifilm X-T200
+      - name: Fujinon XC 15–45mm F3.5–5.6
+        note: gündelik zoom
+      - name: Viltrox AF 23mm f/1.4
+        note: sokak · street
+      - name: Fujinon XC 50–230mm F4.5–6.7
+        note: tele
+  - title:
+      tr: cep
+      en: carry
+    items:
+      - name: Nothing Phone (3a) Pro
+      - name: CMF Buds 2 Plus
+      - name: Seiko 5 7009-876A
+        note: saat
+  - title:
+      tr: yazılım · geliştirme
+      en: software · dev
+    items:
+      - name: Linux Mint
+        url: https://linuxmint.com
+      - name: VS Code
+        url: https://code.visualstudio.com
+      - name: Orca
+        note: agent'larla paralel çalışmak için
+        url: https://www.onorca.dev/
+      - name: Claude Code
+        url: https://claude.com/product/claude-code
+      - name: OpenCode
+        url: https://opencode.ai
+      - name: Cloudflare
+        note: dns, pages, workers
+        url: https://www.cloudflare.com
+  - title:
+      tr: yazılım · tasarım & fotoğraf
+      en: software · design & photo
+    items:
+      - name: Inkscape
+        url: https://inkscape.org
+      - name: darktable
+        note: raw düzenleme
+        url: https://www.darktable.org
+      - name: Snapseed
+        note: telefonda
+  - title:
+      tr: yazılım · gündelik
+      en: software · everyday
+    items:
+      - name: Brave
+        url: https://brave.com
+      - name: Obsidian
+        note: notlar
+        url: https://obsidian.md
+      - name: ReadEra
+        note: e-kitap okuma
+        url: https://readera.org
+      - name: YouTube Music
+        url: https://music.youtube.com
+  - title:
+      tr: atölye & dışarısı
+      en: making & outside
+    items:
+      - name: Bambu Lab A1 Combo
+        note: 3D yazıcı
+        url: https://bambulab.com
+      - name: Mosso Legarda 2123 MSM H
+        note: bisiklet
+      - name: Counter-Strike 2
+        note: arada bir
+  - title:
+      tr: bu site
+      en: this site
+    items:
+      - name: Eleventy
+        note: statik site üretici
+        url: https://www.11ty.dev
+      - name: Cloudflare Pages
+        note: hosting
+        url: https://pages.cloudflare.com
+      - name: El yazımı CSS ve bir canvas
+        note: framework yok

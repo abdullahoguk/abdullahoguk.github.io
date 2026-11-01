@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: kullandıklarım · uses
+schemaKind: page
+description: "What Abdullah Öğük uses — devices, camera gear, software and tools. Kullandığım cihazlar, ekipmanlar ve yazılımlar."
+---
+<header class="page-head">
+  <h1>kullandıklarım<span class="en" lang="en">uses</span></h1>
+  <p class="muted">Her gün elimin altında olan cihazlar, ekipman ve yazılımlar.<span class="en" lang="en">Gear, software and small tools I rely on. Inspired by <a href="https://uses.tech" rel="noopener">uses.tech</a>.</span></p>
+</header>
+
+{%- if uses.photo %}
+<figure class="cover"><img src="{{ uses.photo }}" alt="Masam ve ekipmanım" loading="lazy"></figure>
+{%- endif %}
+
+{%- for group in uses.groups %}
+<section class="block">
+  <h2 class="label">{{ group.title | bi | safe }}</h2>
+  <ul class="rows">
+    {%- for it in group.items %}
+    <li>
+      {%- if it.image %}<img class="thumb" src="{{ it.image }}" alt="" loading="lazy">{% endif %}
+      <span>{% if it.url %}<a href="{{ it.url }}" rel="noopener">{{ it.name }}</a>{% else %}{{ it.name }}{% endif %}{% if it.note %} <span class="muted">{{ it.note }}</span>{% endif %}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}

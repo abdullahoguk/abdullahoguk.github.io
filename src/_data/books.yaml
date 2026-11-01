@@ -1,0 +1,14 @@
+# ─────────────────────────────────────────────────────────────
+#  /read — Goodreads'te OLMAYAN kitaplar (elle eklenenler)
+#  Goodreads kitapları src/_data/goodreads-books.json'dan gelir
+#  (npm run goodreads -- ~/Downloads/goodreads_library_export.csv).
+#  Şablon:
+#    - title: Kitap Adı
+#      author: Yazar
+#      date: 2025-06-01      # bitirme tarihi (yoksa year yaz)
+#      rating: 5             # 0–5
+#      status: read          # read | reading
+#      note: kısa not
+#      url: https://...
+# ─────────────────────────────────────────────────────────────
+[]

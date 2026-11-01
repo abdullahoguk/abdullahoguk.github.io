@@ -1,0 +1,14 @@
+---
+layout: base.njk
+schemaKind: post
+---
+<article class="post" lang="{{ lang or 'tr' }}">
+  <header class="page-head">
+    <p class="muted small"><a href="/blog/">← blog</a> · <time datetime="{{ page.date | ymd }}">{{ page.date | readableDate }}</time>{% if updated %} · updated <time datetime="{{ updated | ymd }}">{{ updated | ymd }}</time>{% endif %}</p>
+    <h1>{{ title }}</h1>
+    {%- if description %}<p class="muted">{{ description }}</p>{% endif %}
+  </header>
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

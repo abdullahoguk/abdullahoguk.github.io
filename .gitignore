@@ -1,1 +1,4 @@
 /.project
+node_modules/
+_site/
+.cache/

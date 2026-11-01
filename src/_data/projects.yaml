@@ -1,0 +1,128 @@
+# ─────────────────────────────────────────────────────────────
+#  Projeler — /projects ve JSON-LD
+#    id        url-dostu kimlik (#anchor ve detay sayfası adresi)
+#    title     ad
+#    year      "2024" veya "2022–"
+#    status    active | wip | archived   (wip → "geliştiriliyor", archived → "eski işler")
+#    kind      dev | design | music | photo
+#    role      senin rolün
+#    summary   { tr, en }
+#    url       canlı link
+#    repo      kaynak kodu
+#    links     ek linkler [{label, url}]
+#    stack     teknolojiler / araçlar
+#    image     kapak görseli (opsiyonel, /img/... yolu)
+#    featured  true → ana sayfada da listelenir
+#    schema    WebSite | SoftwareApplication | CreativeWork
+#  Detay sayfası: src/projects/<id>.md dosyası varsa /projects/<id>/ oluşur.
+# ─────────────────────────────────────────────────────────────
+- id: alaturka-vakitler
+  title: Alaturka Vakitler
+  year: 2022–
+  status: active
+  kind: dev
+  role: Tasarım & geliştirme
+  summary:
+    tr: Alaturka saat, namaz vakitleri ve hicri takvim. Gün, akşam ezanıyla başlar.
+    en: Sunset-based Ottoman time, prayer times and the Hijri calendar, as a PWA.
+  url: https://alaturkavakitler.com
+  repo: https://github.com/saatleriayarlamaenstitusu/alaturkavakitler
+  stack:
+    - Vue 3
+    - Vite
+    - Pinia
+    - PWA
+  image: /img/projects/alaturka-vakitler/01-ana-sayfa.webp
+  featured: true
+  schema: WebSite
+- id: radio-tr
+  title: Radio TR
+  year: "2026"
+  status: active
+  kind: dev
+  role: Tasarım & geliştirme
+  summary:
+    tr: Türkiye radyolarını tek yerde dinlemek için minimal, İsviçre tipografili bir PWA.
+    en: Turkish radio stations in one minimal, installable player.
+  url: https://radio.abdullahog.uk/
+  repo: https://github.com/abdullahoguk/radio-tr
+  stack:
+    - PWA
+    - HLS
+    - Media Session
+  featured: true
+  schema: WebSite
+  image: /img/projects/radio-tr/desktop.webp
+- id: makili-generator
+  title: Latin Makili
+  year: "2026"
+  status: wip
+  kind: design
+  role: Tasarım & geliştirme
+  summary:
+    tr: Latin harfleriyle kare kûfî (makılî) üreten web uygulaması; SVG ve PNG çıktı verir.
+    en: Square Kufic lettering from Latin text, on a unit grid. Exports SVG and PNG.
+  repo: https://github.com/abdullahoguk/makili-generator
+  stack:
+    - JavaScript
+    - SVG
+  featured: true
+  schema: SoftwareApplication
+- id: tr-geo-picker
+  title: TR Geo Picker
+  year: "2026"
+  status: wip
+  kind: dev
+  role: Geliştirme
+  summary:
+    tr: Türkiye haritası üzerinden il ya da ilçe seçtiren, form içinde normal bir input gibi davranan web bileşeni.
+    en: A map-based province / district picker for Turkey that behaves like a native form input.
+  repo: https://github.com/abdullahoguk/tr-geo-picker
+  stack:
+    - JavaScript
+    - Web Components
+  schema: SoftwareApplication
+  image: /img/projects/tr-geo-picker/og.webp
+- id: video-katalog
+  title: Video Katalog
+  year: "2026"
+  status: wip
+  kind: dev
+  role: Geliştirme
+  summary:
+    tr: SD kart ve disklere dağılmış videoları bir kez tarayıp tarayıcıda gezmek, etiketlemek ve seçmek için.
+    en: An offline catalog for footage scattered across SD cards and drives.
+  repo: https://github.com/abdullahoguk/video-katalog
+  stack:
+    - Python
+    - ffmpeg
+  schema: SoftwareApplication
+  image: /img/projects/video-katalog/screenshot.webp
+- id: ffcanli
+  title: Sosyal Futbol Canlı Puan
+  year: "2020"
+  status: archived
+  kind: dev
+  role: Geliştirme
+  summary:
+    tr: Petrol Ofisi’nin Sosyal Futbol oyunu için puanları maçlar oynanırken, hafta bitmeden gösteren yardımcı uygulama.
+    en: "A live-scoring companion for a fantasy football game: points while the matches are still on."
+  repo: https://github.com/abdullahoguk/ffcanli
+  stack:
+    - JavaScript
+  schema: SoftwareApplication
+  image: /img/projects/ffcanli/preview.webp
+- id: dakik
+  title: Dakik
+  year: 2016–2018
+  status: archived
+  kind: dev
+  role: Ekip üyesi · codeaia
+  summary:
+    tr: Basit, çok platformlu zaman ve görev yönetimi uygulaması (pomodoro).
+    en: Simple cross-platform time and task management app.
+  repo: https://github.com/codeaia/dakik
+  stack:
+    - Meteor
+    - React
+  schema: SoftwareApplication

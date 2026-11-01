@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: okuduklarım · read
+schemaKind: collection
+schemaItems: books
+description: "Books Abdullah Öğük is reading and has read. Okuduğum ve okumakta olduğum kitaplar."
+---
+<header class="page-head">
+  <h1>okuduklarım<span class="en" lang="en">read</span></h1>
+  <p class="muted">{{ reading.read.length }} kitap, okuduğum yıla göre. Rafın tamamı <a href="{{ reading.profile }}" rel="me noopener">goodreads</a>'te.<span class="en" lang="en">Books by the year I finished them.</span></p>
+</header>
+
+{%- macro book(b) -%}
+<li>
+  {% if b.url %}<a href="{{ b.url }}" rel="noopener">{{ b.title }}</a>{% else %}<span>{{ b.title }}</span>{% endif %}
+  <span class="muted">{{ b.author }}</span>
+  {%- if b.rating %} <span class="rating" aria-label="{{ b.rating }} / 5">{{ b.rating | stars }}</span>{% endif %}
+  {%- if b.note %}<span class="sub">{{ b.note }}</span>{% endif %}
+</li>
+{%- endmacro -%}
+
+{%- if reading.reading.length %}
+<section class="block">
+  <h2 class="label">okuyorum<span class="en" lang="en">reading now</span></h2>
+  <ul class="rows">
+    {%- for b in reading.reading %}{{ book(b) }}{% endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- for g in reading.byYear %}
+<section class="block">
+  <h2 class="label">{% if g.year == "—" %}tarihsiz<span class="en" lang="en">undated</span>{% else %}{{ g.year }}{% endif %}</h2>
+  <ul class="rows">
+    {%- for b in g.books %}{{ book(b) }}{% endfor %}
+  </ul>
+</section>
+{%- endfor %}

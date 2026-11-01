@@ -1,0 +1,103 @@
+---
+layout: base.njk
+title: projeler · projects
+schemaKind: collection
+schemaItems: projects
+description: "Abdullah Öğük'ün projeleri: Alaturka Vakitler (alaturka saat ve namaz vakitleri), Radio TR, Latin Makili, TR Geo Picker, Video Katalog. Web apps, tools and type experiments."
+---
+<header class="page-head">
+  <h1>projeler<span class="en" lang="en">projects</span></h1>
+  <p class="muted">Yaptığım, tasarladığım ya da yürüttüğüm işler.<span class="en" lang="en">Things I build, design or look after.</span></p>
+</header>
+
+{%- for group in [
+  { status: ["active"], title: "" },
+  { status: ["wip"], title: { tr: "geliştiriliyor", en: "in development" } }
+] %}
+{%- set list = projects | whereIn("status", group.status) %}
+{%- if list.length %}
+{%- if group.title %}<h2 class="section-title label">{{ group.title | bi | safe }}</h2>{% endif %}
+<ol class="projects{% if group.status[0] == 'archived' %} compact{% endif %}">
+  {%- for p in list %}
+  {%- set detail = collections.projectPages | pageFor(p.id) %}
+  <li id="{{ p.id }}">
+    <div class="meta">
+      <span>{{ p.year }}</span>
+      <span class="muted">{{ p.kind }}</span>
+    </div>
+    <div>
+      <h2>{% if detail %}<a href="{{ detail.url }}">{{ p.title }}</a>{% elif p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h2>
+      <p>{{ p.summary | bi | safe }}</p>
+      <p class="muted small">
+        {{ p.role }}{% if p.stack %} · {{ p.stack | join(", ") }}{% endif %}
+        {%- if detail %} · <a href="{{ detail.url }}">detay</a>{% endif %}
+        {%- if p.url %} · <a href="{{ p.url }}" rel="noopener">{{ p.url | host }}</a>{% endif %}
+        {%- if p.repo %} · <a href="{{ p.repo }}" rel="noopener">kaynak</a>{% endif %}
+        {%- for l in p.links %} · <a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% endfor %}
+      </p>
+    </div>
+  </li>
+  {%- endfor %}
+</ol>
+{%- endif %}
+{%- endfor %}
+
+{%- if work %}
+<h2 class="section-title label" id="serbay-kod8">Serbay ve Kod8'de<span class="en" lang="en">at work</span></h2>
+<p class="muted small work-intro">Çalıştığım yerlerde geliştirilmesinde ve yapımında yer aldığım işlerden bazıları.<span class="en" lang="en">Some of the products and websites I worked on at Serbay and Kod8.</span></p>
+
+{%- if work.products.length %}
+<section class="block">
+  <h3 class="label">ürünler<span class="en" lang="en">products</span></h3>
+  <ul class="rows">
+    {%- for p in work.products %}
+    <li>{% if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.title }}</a>{% else %}<span>{{ p.title }}</span>{% endif %}<span class="sub">{{ p.summary | bi | safe }}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- if work.sites.length %}
+<section class="block">
+  <h3 class="label">web siteleri<span class="en" lang="en">websites</span></h3>
+  <ul class="rows sites">
+    {%- for s in work.sites %}
+    <li><a href="{{ s.url }}" rel="noopener">{{ s.title }}</a><span class="sub">{{ s.kind }}</span></li>
+    {%- endfor %}
+    <li class="muted">ve daha fazlası…<span class="en" lang="en">and many more</span></li>
+  </ul>
+</section>
+{%- endif %}
+{%- endif %}
+
+{%- for group in [
+  { status: ["archived"], title: { tr: "eski işler", en: "archive" } }
+] %}
+{%- set list = projects | whereIn("status", group.status) %}
+{%- if list.length %}
+{%- if group.title %}<h2 class="section-title label">{{ group.title | bi | safe }}</h2>{% endif %}
+<ol class="projects{% if group.status[0] == 'archived' %} compact{% endif %}">
+  {%- for p in list %}
+  {%- set detail = collections.projectPages | pageFor(p.id) %}
+  <li id="{{ p.id }}">
+    <div class="meta">
+      <span>{{ p.year }}</span>
+      <span class="muted">{{ p.kind }}</span>
+    </div>
+    <div>
+      <h2>{% if detail %}<a href="{{ detail.url }}">{{ p.title }}</a>{% elif p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h2>
+      <p>{{ p.summary | bi | safe }}</p>
+      <p class="muted small">
+        {{ p.role }}{% if p.stack %} · {{ p.stack | join(", ") }}{% endif %}
+        {%- if detail %} · <a href="{{ detail.url }}">detay</a>{% endif %}
+        {%- if p.url %} · <a href="{{ p.url }}" rel="noopener">{{ p.url | host }}</a>{% endif %}
+        {%- if p.repo %} · <a href="{{ p.repo }}" rel="noopener">kaynak</a>{% endif %}
+        {%- for l in p.links %} · <a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% endfor %}
+      </p>
+    </div>
+  </li>
+  {%- endfor %}
+</ol>
+{%- endif %}
+{%- endfor %}
+

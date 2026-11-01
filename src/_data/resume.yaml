@@ -1,0 +1,76 @@
+# ─────────────────────────────────────────────────────────────
+#  /resume ve ana sayfadaki deneyim bölümü (JSON-LD'ye de beslenir)
+#  Kaynak: LinkedIn. start/end: "2021-01" veya "2021"; end boşsa → bugün.
+# ─────────────────────────────────────────────────────────────
+summary:
+  tr: Tasarımcı gözüyle çalışan bir web geliştirici. Performansa, erişilebilirliğe ve yazılımı sakin hissettiren küçük ayrıntılara önem veririm.
+  en: Web developer with a designer's eye. I care about performance, accessibility and the small details that make software feel calm.
+experience:
+  - role: Web Developer
+    org: Serbay
+    url: ""
+    place: Düzce
+    start: 2021-01
+    end: ""
+    notes: []
+  - role: Web Developer
+    org: Kod8
+    url: ""
+    place: Düzce
+    start: 2021-01
+    end: ""
+    notes: []
+  - role: Web Development Intern
+    org: Serbay
+    url: ""
+    place: Düzce
+    start: 2020-10
+    end: 2020-12
+    notes:
+      - Long-term internship
+  - role: Web Development Intern
+    org: Octahedron A.Ş.
+    url: ""
+    place: Manisa
+    start: 2016-12
+    end: 2017-05
+    notes:
+      - Single-page web application development with Meteor and React.
+  - role: Intern
+    org: T-Soft
+    url: ""
+    place: İstanbul
+    start: 2015-07
+    end: 2015-08
+    notes: []
+education:
+  - degree: Lisans · BSc
+    field: Bilgisayar Mühendisliği · Computer Engineering
+    org: Manisa Celal Bayar Üniversitesi
+    url: https://www.cbu.edu.tr
+    start: "2012"
+    end: "2017"
+skills:
+  - group: Languages
+    items:
+      - JavaScript
+      - TypeScript
+      - HTML
+      - CSS
+      - Python
+  - group: Frontend
+    items:
+      - Vue
+      - React
+      - PWA
+      - Web Components
+  - group: Design
+    items:
+      - Typography
+      - Inkscape
+      - Photography
+languages:
+  - name: Türkçe
+    level: native
+  - name: English
+    level: professional

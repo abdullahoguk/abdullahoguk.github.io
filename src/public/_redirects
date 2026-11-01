@@ -1,0 +1,5 @@
+# Cloudflare Pages redirects — kısa linkler
+/cv        /resume/   301
+/books     /read/     301
+/movies    /watched/  301
+/links     /#other     301

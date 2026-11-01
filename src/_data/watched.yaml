@@ -1,0 +1,834 @@
+# ─────────────────────────────────────────────────────────────
+#  /watched — diziler ve filmler, türlerine göre
+#    groups[].type    series | movie   (sayfada “diziler” / “filmler” altında)
+#    groups[].title   { tr, en }
+#    items[]          title, year, imdb (tt… → link), imdbRating, note,
+#                     fav: true → favori (kalın, grubun başında)
+#                     type: series → film grubundaki bir dizi için
+# ─────────────────────────────────────────────────────────────
+groups:
+  - type: series
+    title:
+      tr: suç ve polisiye
+      en: crime & detective
+    items:
+      - title: Breaking Bad
+        year: 2008
+        imdb: tt0903747
+        imdbRating: 9.5
+        fav: true
+      - title: The Sopranos
+        year: 1999
+        imdb: tt0141842
+        imdbRating: 9.2
+        fav: true
+      - title: Better Call Saul
+        year: 2015
+        imdb: tt3032476
+        imdbRating: 9
+        fav: true
+      - title: The Wire
+        year: 2002
+        imdb: tt0306414
+        imdbRating: 9.3
+        fav: true
+      - title: The Shield
+        year: 2002
+        imdb: tt0286486
+        imdbRating: 8.7
+        fav: true
+      - title: Fargo
+        year: 2014
+        imdb: tt2802850
+        imdbRating: 8.8
+        fav: true
+      - title: True Detective
+        year: 2014
+        imdb: tt2356777
+        imdbRating: 8.8
+        fav: true
+      - title: Boardwalk Empire
+        year: 2010
+        imdb: tt0979432
+        imdbRating: 8.5
+        fav: true
+      - title: Banshee
+        year: 2013
+        imdb: tt2017109
+        imdbRating: 8.4
+        fav: true
+      - title: Gangs of London
+        year: 2020
+        imdb: tt7661390
+        imdbRating: 8
+        fav: true
+      - title: Get Shorty
+        year: 2017
+        imdb: tt5761496
+        imdbRating: 8.2
+        fav: true
+      - title: We Own This City
+        year: 2022
+        imdb: tt14192504
+        imdbRating: 7.6
+        fav: true
+      - title: The Night Of
+        year: 2016
+        imdb: tt2401256
+        imdbRating: 8.4
+        fav: true
+      - title: The Gentlemen
+        year: 2024
+        imdb: tt13210838
+        imdbRating: 8.1
+        fav: true
+      - title: Luther
+        year: 2010
+        imdb: tt1474684
+        imdbRating: 8.4
+        fav: true
+      - title: Broadchurch
+        year: 2013
+        imdb: tt2249364
+        imdbRating: 8.3
+        fav: true
+      - title: The Fall
+        year: 2013
+        imdb: tt2294189
+        imdbRating: 8.1
+        fav: true
+      - title: The Missing
+        year: 2014
+        imdb: tt3877200
+        imdbRating: 8.1
+        fav: true
+      - title: Sherlock
+        year: 2010
+        imdb: tt1475582
+        imdbRating: 9
+        fav: true
+      - title: Endeavour
+        year: 2012
+        imdb: tt2701582
+        imdbRating: 8.6
+        fav: true
+      - title: Line of Duty
+        year: 2012
+        imdb: tt2303687
+        imdbRating: 8.7
+        fav: true
+      - title: Unforgotten
+        year: 2015
+        imdb: tt4192812
+        imdbRating: 8.4
+        fav: true
+      - title: Whitechapel
+        year: 2009
+        imdb: tt1186356
+        imdbRating: 7.8
+        fav: true
+      - title: Hinterland
+        year: 2013
+        imdb: tt2575968
+        imdbRating: 7.6
+        fav: true
+      - title: Bodyguard
+        year: 2018
+        imdb: tt7493974
+        imdbRating: 8
+        fav: true
+      - title: Person of Interest
+        year: 2011
+        imdb: tt1839578
+      - title: Lie to Me
+        year: 2009
+        imdb: tt1235099
+      - title: The Americans
+        year: 2013
+        imdb: tt2149175
+      - title: Hijack
+        year: 2023
+        imdb: tt19854762
+  - type: series
+    title:
+      tr: dram, bilimkurgu ve kült
+      en: drama, sci-fi & cult
+    items:
+      - title: Black Mirror
+        year: 2011
+        imdb: tt2085059
+        imdbRating: 8.7
+        fav: true
+      - title: Utopia
+        year: 2013
+        imdb: tt2384811
+        imdbRating: 8.4
+        fav: true
+      - title: The Leftovers
+        year: 2014
+        imdb: tt2699128
+        imdbRating: 8.3
+        fav: true
+      - title: Twin Peaks
+        year: 1990
+        imdb: tt0098936
+        imdbRating: 8.7
+        fav: true
+      - title: Atlanta
+        year: 2016
+        imdb: tt4288182
+        imdbRating: 8.6
+        fav: true
+      - title: Severance
+        year: 2022
+        imdb: tt11280740
+        imdbRating: 8.6
+        fav: true
+      - title: Six Feet Under
+        year: 2001
+        imdb: tt0248654
+        imdbRating: 8.7
+        fav: true
+      - title: Succession
+        year: 2018
+        imdb: tt7660850
+        imdbRating: 8.8
+        fav: true
+      - title: My Brilliant Friend
+        year: 2018
+        imdb: tt7278862
+        imdbRating: 8.6
+        fav: true
+      - title: Pluribus
+        year: 2025
+        imdb: tt22202452
+        fav: true
+      - title: Dirk Gently's Holistic Detective Agency
+        year: 2016
+        imdb: tt4047038
+      - title: Westworld
+        year: 2016
+        imdb: tt0475784
+      - title: The Mandalorian
+        year: 2019
+        imdb: tt8111088
+      - title: Taboo
+        year: 2017
+        imdb: tt3647998
+      - title: Tales from the Loop
+        year: 2020
+        imdb: tt8741290
+  - type: series
+    title:
+      tr: komedi
+      en: comedy
+    items:
+      - title: The IT Crowd
+        year: 2006
+        imdb: tt0487831
+        imdbRating: 8.5
+        fav: true
+      - title: Black Books
+        year: 2000
+        imdb: tt0262150
+        imdbRating: 8.4
+        fav: true
+      - title: Blackadder
+        year: 1983
+        imdb: tt0084988
+        imdbRating: 8
+        fav: true
+      - title: Toast of London
+        year: 2012
+        imdb: tt2432604
+        imdbRating: 8.2
+        fav: true
+      - title: Only Fools and Horses
+        year: 1981
+        imdb: tt0081912
+        imdbRating: 9
+        fav: true
+      - title: The Office
+        year: 2001
+        imdb: tt0290978
+        imdbRating: 8.5
+        fav: true
+      - title: Toast of Tinseltown
+        year: 2022
+        imdb: tt14155746
+        imdbRating: 7.4
+        fav: true
+      - title: Moone Boy
+        year: 2012
+        imdb: tt2319283
+      - title: Silicon Valley
+        year: 2014
+        imdb: tt2575988
+      - title: After Life
+        year: 2019
+        imdb: tt8398600
+      - title: Barry
+        year: 2018
+        imdb: tt5348176
+  - type: series
+    title:
+      tr: türk dizileri
+      en: turkish series
+    items:
+      - title: Leyla ile Mecnun
+        year: 2011
+        imdb: tt1831164
+        imdbRating: 9
+        fav: true
+      - title: Avrupa Yakası
+        year: 2004
+        imdb: tt0421291
+        imdbRating: 8.6
+        fav: true
+      - title: İşler Güçler
+        year: 2012
+        imdb: tt2311418
+        imdbRating: 8.6
+        fav: true
+      - title: 7 Numara
+        year: 2000
+        imdb: tt0992966
+        imdbRating: 8.8
+        fav: true
+      - title: Kardeş Payı
+        year: 2014
+        imdb: tt3671754
+        imdbRating: 8.6
+        fav: true
+      - title: Gibi
+        year: 2021
+        imdb: tt13675832
+        imdbRating: 9
+        fav: true
+      - title: Yeditepe İstanbul
+        year: 2001
+        imdb: tt0290995
+        imdbRating: 8.6
+        fav: true
+      - title: Kaygısızlar
+        year: 1994
+        imdb: tt1616295
+        fav: true
+      - title: Filinta
+        year: 2014
+        imdb: tt4338234
+      - title: Ayrılsak da Beraberiz
+        year: 1999
+        imdb: tt0493471
+      - title: En Son Babalar Duyar
+        year: 2002
+        imdb: tt0448284
+      - title: Ramazan Güzeldir
+        year: 2009
+        imdb: tt4548780
+      - title: Üsküdar'a Giderken
+        year: 2011
+        imdb: tt2311454
+  - type: series
+    title:
+      tr: mini diziler ve belgeseller
+      en: miniseries & documentaries
+    items:
+      - title: Time
+        year: 2021
+        imdb: tt13138834
+      - title: Planet Earth
+        year: 2006
+        imdb: tt0795176
+      - title: Life
+        year: 2009
+        imdb: tt1533395
+      - title: Les Misérables
+        year: 2018
+        imdb: tt5900600
+      - title: Year of the Rabbit
+        year: 2019
+        imdb: tt8530456
+      - title: The Virtues
+        year: 2019
+        imdb: tt7186126
+      - title: This Is England '88
+        year: 2011
+        imdb: tt2126154
+  - type: movie
+    title:
+      tr: türk sineması
+      en: turkish cinema
+    items:
+      - title: Bir Zamanlar Anadolu'da
+        year: 2011
+        imdb: tt1827487
+        imdbRating: 7.8
+        fav: true
+        note: Nuri Bilge Ceylan
+      - title: Uzak
+        year: 2002
+        imdb: tt0346094
+        imdbRating: 7.5
+        fav: true
+        note: Nuri Bilge Ceylan
+      - title: Mayıs Sıkıntısı
+        year: 1999
+        imdb: tt0234217
+        imdbRating: 7.3
+        fav: true
+        note: Nuri Bilge Ceylan
+      - title: İklimler
+        year: 2006
+        imdb: tt0498097
+        imdbRating: 7
+        fav: true
+        note: Nuri Bilge Ceylan
+      - title: Ahlat Ağacı
+        year: 2018
+        imdb: tt6628102
+        imdbRating: 8
+        fav: true
+        note: Nuri Bilge Ceylan
+      - title: Kuru Otlar Üstüne
+        year: 2023
+        imdb: tt13231544
+        imdbRating: 7.7
+        fav: true
+        note: Nuri Bilge Ceylan
+      - title: Yahşi Batı
+        year: 2009
+        imdb: tt1567448
+      - title: Organize İşler
+        year: 2005
+        imdb: tt0470883
+      - title: Celal Tan ve Ailesinin Aşırı Acıklı Hikayesi
+        year: 2011
+        imdb: tt2124186
+      - title: Ali Baba ve 7 Cüceler
+        year: 2015
+        imdb: tt4728338
+      - title: Ailecek Şaşkınız
+        year: 2018
+        imdb: tt7748426
+      - title: Her Şey Çok Güzel Olacak
+        year: 1998
+        imdb: tt0263438
+      - title: İnşaat
+        year: 2003
+        imdb: tt0416854
+      - title: Biz Size Döneriz
+        year: 2017
+        imdb: tt6559642
+      - title: Bütün Saadetler Mümkündür
+        year: 2017
+        imdb: tt6493472
+      - title: Arif V 216
+        year: 2018
+        imdb: tt6697582
+      - title: Bana Bir Soygun Yaz
+        year: 2012
+        imdb: tt2561140
+      - title: Kara Bela
+        year: 2015
+        imdb: tt4974684
+      - title: Vay Arkadaş
+        year: 2010
+        imdb: tt1772416
+      - title: Sürgün
+        year: 1992
+      - title: Bal
+        year: 2010
+        imdb: tt1571724
+      - title: "Karakomik Filmler: Kaçamak"
+        year: 2019
+        imdb: tt8865546
+      - title: Dilsiz
+        year: 2019
+        imdb: tt10763914
+      - title: Hayat
+        year: 2023
+        imdb: tt20258974
+      - title: Yan Yana
+        year: 2025
+        imdb: tt37529347
+      - title: Hacivat Karagöz Neden Öldürüldü?
+        year: 2006
+        imdb: tt0485510
+      - title: Polis
+        year: 2007
+        imdb: tt0826606
+      - title: Buğday
+        year: 2017
+        imdb: tt4073682
+      - title: Abluka
+        year: 2015
+        imdb: tt4895740
+      - title: Karpuz Kabuğundan Gemiler Yapmak
+        year: 2004
+        imdb: tt0325675
+      - title: Kelebekler
+        year: 2018
+        imdb: tt7318202
+      - title: 3 Yol
+        year: 2013
+        imdb: tt2219370
+      - title: Tabutta Rövaşata
+        year: 1996
+        imdb: tt0127311
+      - title: Beş Şehir
+        year: 2009
+        imdb: tt1523415
+      - title: Yumurta
+        year: 2007
+        imdb: tt1021004
+      - title: Pek Yakında
+        year: 2014
+        imdb: tt3698408
+      - title: Deli Aşk
+        year: 2017
+        imdb: tt6229852
+      - title: Ertuğrul 1890
+        year: 2015
+        imdb: tt3512072
+      - title: Nuh Tepesi
+        year: 2019
+        imdb: tt8090580
+  - type: movie
+    title:
+      tr: iran ve orta doğu sineması
+      en: iranian & middle eastern cinema
+    items:
+      - title: A Separation
+        year: 2011
+        imdb: tt1832382
+        imdbRating: 8.3
+        fav: true
+      - title: Life and a Day
+        year: 2016
+        imdb: tt5460658
+        imdbRating: 8.1
+        fav: true
+      - title: Fireworks Wednesday
+        year: 2006
+        imdb: tt0845439
+        imdbRating: 7.6
+        fav: true
+      - title: The Salesman
+        year: 2016
+        imdb: tt5186714
+        imdbRating: 7.7
+        fav: true
+      - title: About Elly
+        year: 2009
+        imdb: tt1360860
+        imdbRating: 7.9
+        fav: true
+      - title: The Past
+        year: 2013
+        imdb: tt2404461
+        imdbRating: 7.7
+        fav: true
+      - title: The Song of Sparrows
+        year: 2008
+        imdb: tt0997246
+        imdbRating: 7.9
+        fav: true
+      - title: The Color of Paradise
+        year: 1999
+        imdb: tt0191043
+        imdbRating: 8.1
+        fav: true
+      - title: Children of Heaven
+        year: 1997
+        imdb: tt0118849
+        imdbRating: 8.2
+        fav: true
+      - title: What's the Time in Your World?
+        year: 2014
+        imdb: tt4108894
+        imdbRating: 7
+        fav: true
+      - title: Here Without Me
+        year: 2011
+        imdb: tt1874522
+        imdbRating: 7.7
+        fav: true
+      - title: The Lizard
+        year: 2004
+        imdb: tt0416960
+        imdbRating: 8.4
+        fav: true
+      - title: Gold and Copper
+        year: 2010
+        imdb: tt1804642
+        imdbRating: 7.1
+        fav: true
+      - title: The Last Step
+        year: 2012
+        imdb: tt2161980
+        imdbRating: 7.2
+        fav: true
+      - title: Beautiful City
+        year: 2004
+        imdb: tt0424434
+        imdbRating: 7.6
+        fav: true
+      - title: The Wind Will Carry Us
+        year: 1999
+        imdb: tt0209463
+        imdbRating: 7.4
+        fav: true
+      - title: The Silence
+        year: 1998
+        imdb: tt0152438
+      - title: God Is Close
+        year: 2007
+        imdb: tt3985970
+      - title: Between Family
+        year: 2017
+        imdb: tt7642818
+      - title: Someone Wants to Talk with You
+        year: 2012
+        imdb: tt3718222
+      - title: "Bab'Aziz: The Prince That Contemplated His Soul"
+        year: 2005
+        imdb: tt0395461
+      - title: The Time That Remains
+        year: 2009
+        imdb: tt1037163
+  - type: movie
+    title:
+      tr: suç, aksiyon ve hollywood
+      en: crime, action & hollywood
+    items:
+      - title: Snatch
+        year: 2000
+        imdb: tt0208092
+        imdbRating: 8.2
+        fav: true
+      - title: Lock, Stock and Two Smoking Barrels
+        year: 1998
+        imdb: tt0120735
+        imdbRating: 8.1
+        fav: true
+      - title: The Gentlemen
+        year: 2019
+        imdb: tt8367814
+        imdbRating: 7.8
+        fav: true
+      - title: RocknRolla
+        year: 2008
+        imdb: tt1032755
+        imdbRating: 7.2
+        fav: true
+      - title: Wrath of Man
+        year: 2021
+        imdb: tt11083552
+        imdbRating: 7.1
+        fav: true
+      - title: "Operation Fortune: Ruse de Guerre"
+        year: 2023
+        imdb: tt7985704
+        imdbRating: 6.3
+        fav: true
+      - title: The Man from U.N.C.L.E.
+        year: 2015
+        imdb: tt1638355
+        imdbRating: 7.2
+        fav: true
+      - title: Hot Fuzz
+        year: 2007
+        imdb: tt0425112
+        imdbRating: 7.8
+        fav: true
+      - title: The Nice Guys
+        year: 2016
+        imdb: tt3799694
+        imdbRating: 7.4
+        fav: true
+      - title: Ali
+        year: 2001
+        imdb: tt0248667
+      - title: Collateral
+        year: 2004
+        imdb: tt0369339
+      - title: The Italian Job
+        year: 2003
+        imdb: tt0317740
+      - title: Taken
+        year: 2008
+        imdb: tt0936501
+      - title: One Flew Over the Cuckoo's Nest
+        year: 1975
+        imdb: tt0073486
+      - title: The Silence of the Lambs
+        year: 1991
+        imdb: tt0102926
+      - title: Se7en
+        year: 1995
+        imdb: tt0114369
+      - title: Django Unchained
+        year: 2012
+        imdb: tt1853728
+      - title: The Usual Suspects
+        year: 1995
+        imdb: tt0114814
+      - title: Man on Fire
+        year: 2004
+        imdb: tt0328107
+      - title: Malcolm X
+        year: 1992
+        imdb: tt0104797
+      - title: American Gangster
+        year: 2007
+        imdb: tt0765429
+      - title: Inside Man
+        year: 2006
+        imdb: tt0454848
+      - title: Fargo
+        year: 1996
+        imdb: tt0116282
+      - title: Inception
+        year: 2010
+        imdb: tt1375666
+      - title: Interstellar
+        year: 2014
+        imdb: tt0816692
+      - title: True Grit
+        year: 2010
+        imdb: tt1403865
+      - title: O Brother, Where Art Thou?
+        year: 2000
+        imdb: tt0190590
+      - title: The Resident
+        year: 2011
+        imdb: tt1334102
+      - title: The Ballad of Buster Scruggs
+        year: 2018
+        imdb: tt6412452
+      - title: Pirates of the Caribbean serisi
+        year: 2003–2017
+        imdb: tt0325980
+      - title: Dunkirk
+        year: 2017
+        imdb: tt5013056
+      - title: The Truman Show
+        year: 1998
+        imdb: tt0120382
+      - title: Nobody
+        year: 2021
+        imdb: tt7888964
+      - title: The Matrix Reloaded
+        year: 2003
+        imdb: tt0234215
+      - title: Good Bye Lenin!
+        year: 2003
+        imdb: tt0301357
+      - title: Dune
+        year: 2021
+        imdb: tt1160419
+      - title: Reservoir Dogs
+        year: 1992
+        imdb: tt0105236
+      - title: The Equalizer
+        year: 2014
+        imdb: tt0455944
+      - title: "Kill Bill: Vol. 2"
+        year: 2004
+        imdb: tt0378194
+      - title: The Banshees of Inisherin
+        year: 2022
+        imdb: tt11813216
+      - title: The Ministry of Ungentlemanly Warfare
+        year: 2024
+        imdb: tt5177120
+      - title: Normal
+        year: 2025
+        imdb: tt31195136
+  - type: movie
+    title:
+      tr: animasyon
+      en: animation
+    items:
+      - title: WALL·E
+        year: 2008
+        imdb: tt0910970
+        imdbRating: 8.4
+        fav: true
+      - title: Up
+        year: 2009
+        imdb: tt1049413
+        imdbRating: 8.3
+        fav: true
+      - title: Ratatouille
+        year: 2007
+        imdb: tt0382932
+        imdbRating: 8.1
+        fav: true
+      - title: How to Train Your Dragon
+        year: 2010
+        imdb: tt0892769
+        imdbRating: 8.1
+        fav: true
+      - title: "Minuscule: Valley of the Lost Ants"
+        year: 2013
+        imdb: tt2368672
+        fav: true
+      - title: Shaun the Sheep
+        year: 2007
+        imdb: tt0983983
+        type: series
+      - title: Penguins of Madagascar
+        year: 2014
+        imdb: tt1911658
+      - title: The Boxtrolls
+        year: 2014
+        imdb: tt0787474
+      - title: "How to Train Your Dragon: The Hidden World"
+        year: 2019
+        imdb: tt2386490
+      - title: Fantastic Mr. Fox
+        year: 2009
+        imdb: tt0432283
+      - title: "Wallace & Gromit: The Curse of the Were-Rabbit"
+        year: 2005
+        imdb: tt0312004
+      - title: Robots
+        year: 2005
+        imdb: tt0358082
+      - title: How to Train Your Dragon 2
+        year: 2014
+        imdb: tt1646971
+      - title: Shaun the Sheep Movie
+        year: 2015
+        imdb: tt2872750
+  - type: movie
+    title:
+      tr: diğer filmler
+      en: other films
+    items:
+      - title: Snijeg
+        year: 2008
+        imdb: tt1146295
+      - title: The Perfect Circle
+        year: 1997
+        imdb: tt0117555
+      - title: The Message
+        year: 1976
+        imdb: tt0074896
+      - title: Cube
+        year: 1997
+        imdb: tt0123755
+      - title: Monsieur Ibrahim
+        year: 2003
+        imdb: tt0329388
+      - title: El Camino
+        year: 2019
+        imdb: tt9243946
+      - title: Koyaanisqatsi
+        year: 1982
+        imdb: tt0085809
+      - title: Soul Kitchen
+        year: 2009
+        imdb: tt1244668

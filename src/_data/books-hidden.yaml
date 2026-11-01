@@ -1,0 +1,54 @@
+# ─────────────────────────────────────────────────────────────
+#  /read’de gösterilmeyecek Goodreads kitapları.
+#  id = Goodreads Book Id (title sadece okunabilirlik için).
+#  note: "bitince ekle" → okumayı bitirince listeden sil, sitede çıksın.
+#  Yeni CSV içe aktarıldığında bu liste korunur; panelden de işaretlenebilir.
+# ─────────────────────────────────────────────────────────────
+- id: "41963913"
+  title: "İsmet Özel: Şiire Damıtılmış Hayat"
+- id: "59048221"
+  title: Genç Kızlar İçin Altı Derste Tabiî Yazmak Sanatı & Edebiyat Yazıları
+- id: "9921305"
+  title: Poetika - Şiir Sanatı Üstüne
+- id: "30367315"
+  title: İslâm'da Şehir ve Mimari
+- id: "5470"
+  title: "1984"
+- id: "17383503"
+  title: Celladıma Gülümserken (Çektirdiğim Son Resmin Arkasındaki Satırlar)
+- id: "193653"
+  title: "Ibn 'Arabi: The Voyage of No Return (Muslim Personalities Series)"
+- id: "13344087"
+  title: Gül Yetiştiren Adam
+- id: "6482270"
+  title: Mağaradakiler
+- id: "28090289"
+  title: "The Urban Sketching Handbook Understanding Perspective: Easy Techniques for Mastering Perspective Drawing on Location (Volume 4)"
+- id: "14760488"
+  title: Yürekdede ile Padişah
+- id: "7712541"
+  title: Sergüzeşt
+- id: "20653278"
+  title: Enerji Kan Kokuyor
+- id: "128029"
+  title: A Thousand Splendid Suns
+- id: "77203"
+  title: The Kite Runner
+- id: "16125679"
+  title: Son Sefarad
+- id: "8062420"
+  title: Çile
+- id: "2134145"
+  title: İki Dirhem Bir Çekirdek
+- id: "27215430"
+  title: Bir Akşam Gezintisi Değil Bir İstiklal Yürüyüşü 1
+  note: bitince ekle
+- id: "10369600"
+  title: Beyaz Geceler
+  note: bitince ekle
+- id: "23358213"
+  title: İnsancıklar
+  note: bitince ekle
+- id: "43614013"
+  title: Delilige Ovgu
+  note: bitince ekle

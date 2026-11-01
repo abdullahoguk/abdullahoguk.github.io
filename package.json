@@ -1,0 +1,21 @@
+{
+  "name": "abdullahoguk.com.tr",
+  "private": true,
+  "type": "module",
+  "description": "Personal site of Abdullah Öğük — static, built with Eleventy, deployed on Cloudflare Pages.",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "new:post": "node scripts/new-post.js",
+    "goodreads": "node scripts/goodreads-import.js",
+    "panel": "node scripts/panel/server.js",
+    "raindrop": "node scripts/raindrop-import.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "js-yaml": "^4.1.0"
+  }
+}

@@ -1,0 +1,148 @@
+# ─────────────────────────────────────────────────────────────
+#  Site & kimlik ayarları — identity settings
+#  Bu dosya: meta etiketleri, JSON-LD (Person), llms.txt ve
+#  ana sayfadaki tanıtım metnini besler.
+#
+#  İki dilli alanlar:  { tr: "Türkçe", en: "English" }
+#  → Türkçe üstte, İngilizce altında daha küçük ve soluk görünür.
+#  Düz metin de yazabilirsin; o zaman tek satır çıkar.
+# ─────────────────────────────────────────────────────────────
+url: https://abdullahoguk.com.tr
+lang: tr-TR
+title: Abdullah Öğük
+# ana sayfanın <title>'ı ve paylaşım başlığı
+homeTitle: "Abdullah Öğük · web yazılım geliştirici, tasarım ve fotoğraf"
+description: >-
+  Abdullah Öğük — Düzce'de web yazılım geliştirici (web developer). Musiki, makılî ve
+  tipografi, arayüz tasarımı, fotoğraf; Alaturka Vakitler ve Radio TR gibi projeler.
+  Web developer from Türkiye: classical music, type, design and photography.
+locale: tr_TR
+themeColor: "#1b1a18"
+ogImage: /img/og.png
+analyticsId: G-QL56TJ34G1   # boş bırakırsan GA yüklenmez
+
+# ─────────────────────────────────────────────────────────────
+#  Ana sayfa arka plan animasyonu (panelden de seçilebilir)
+#    auto | steppe | spring | summer | autumn | winter | sunset
+#    sunset → istanbul sahilinde gün batımı
+#  auto → mevsime göre. Önizleme: siteye ?scene=winter ekle.
+#  scenePicker: true → ana sayfada küçük bir sahne değiştirici çıkar
+# ─────────────────────────────────────────────────────────────
+scene: auto
+scenePicker: true
+
+author:
+  name: Abdullah Öğük
+  givenName: Abdullah
+  familyName: Öğük
+  alternateName: [Abdullah Oguk, abdullahoguk]
+  email: merhaba@abdullahog.uk
+  image: /img/avatar-logo.png       # TODO: gerçek portre fotoğrafı (kare, ≥400px)
+  jobTitle: Web Developer
+  jobTitleTr: Web Yazılım Geliştirici
+  location: { city: Düzce, country: TR }
+  worksFor:
+    - { name: Serbay, url: "" }
+    - { name: Kod8, url: "" }
+  alumniOf:
+    - name: Manisa Celal Bayar Üniversitesi
+      url: https://www.cbu.edu.tr
+  knowsAbout:
+    - Web development
+    - JavaScript
+    - Frontend engineering
+    - Progressive web apps
+    - UI design
+    - Typography
+    - Square Kufic (makılî)
+    - Graphic design
+    - Photography
+    - Turkish classical music
+    - Tasavvuf musikisi
+  languages: [tr, en]
+
+# Ana sayfa tanıtım paragrafları (inline HTML serbest)
+intro:
+  - tr: "Merhaba, ben Abdullah."
+    en: "Hi, I'm Abdullah."
+  - tr: "Web yazılım geliştiriciyim. Kalan zamanlarda tasarım yapar, fotoğraf çeker, kitap okur, bisiklete binerim. Doğada gezerim, kedileri severim."
+    en: "Web developer. Otherwise designing, taking photos, reading and cycling. I wander in nature and love cats."
+
+# "şimdi · now" — nerede çalışıyorsun, neyle uğraşıyorsun (satır başına bir cümle)
+now:
+  - tr: "Düzce'de Serbay ve Kod8'de web developer olarak çalışıyorum."
+    en: "Web developer at Serbay and Kod8, Düzce."
+
+nav:
+  - { label: home,      url: / }
+  - { label: projects,  url: /projects/ }
+  - { label: blog,      url: /blog/ }
+  - { label: read,      url: /read/ }
+  - { label: watched,   url: /watched/ }
+  - { label: listens,   url: /listens/ }
+  - { label: uses,      url: /uses/ }
+  - { label: bookmarks, url: /bookmarks/ }
+
+# ─────────────────────────────────────────────────────────────
+#  Linkler — ana sayfada her grup kendi başlığı ve kısa cümlesiyle
+#  bir bölüm olur.
+#    id      dev | design | photo | other   (sabit)
+#    title   { tr, en }
+#    blurb   { tr, en } — "ne yapıyorum" cümlesi (inline HTML serbest)
+#    items   linkler; primary: true → giriş altında da gösterilir
+#  Tümü JSON-LD sameAs olur (sameAs: false ile hariç tut).
+# ─────────────────────────────────────────────────────────────
+links:
+  - id: dev
+    title: { tr: yazılım, en: dev }
+    blurb:
+      tr: Hızlı, erişilebilir ve özenle işlenmiş web arayüzleri geliştiriyorum.
+      en: Fast, accessible, carefully made web interfaces.
+    items:
+      - { label: github,   handle: "@abdullahoguk", url: "https://github.com/abdullahoguk", primary: true }
+      - { label: codepen,  handle: "frontend playground", url: "https://codepen.io/abdullahoguk" }
+      - { label: linkedin, handle: "@abdullahoguk", url: "https://www.linkedin.com/in/abdullahoguk", primary: true }
+
+  - id: design
+    title: { tr: tasarım, en: design }
+    blurb:
+      tr: Makılî ve tipografi, afiş, arayüz ve sosyal medya tasarımı.
+      en: Square kufic and type, posters, interfaces and social media.
+    items:
+      - { label: instagram, handle: "@abdullah.oguk", url: "https://www.instagram.com/abdullah.oguk" }
+      - { label: behance,   handle: "@abdullahoguk", url: "https://www.behance.net/abdullahoguk" }
+      - { label: dribbble,  handle: "@abdullahoguk", url: "https://dribbble.com/abdullahoguk" }
+
+  - id: photo
+    title: { tr: fotoğraf, en: photography }
+    blurb:
+      tr: Sokak, manzara ve gündelik anlar. Doğal güneş ışığını severim, peşinden giderim.
+      en: Street, landscape and everyday moments, always chasing natural light.
+    items:
+      - { label: instagram, handle: "@abdullahoguk", url: "https://www.instagram.com/abdullahoguk" }
+      - { label: unsplash,  handle: "@abdullahoguk", url: "https://unsplash.com/@abdullahoguk" }
+      - { label: pexels,    handle: "@abdullahoguk", url: "https://www.pexels.com/@abdullahoguk" }   # TODO: kullanıcı adını doğrula
+      - { label: flickr,    handle: "archive",       url: "https://www.flickr.com/photos/83093199@N08/" }
+      # TODO: fotoblog hazır olunca aç
+      # - { label: fotoblog, handle: "photo journal", url: "https://..." }
+
+  - id: other
+    title: { tr: diğer, en: other }
+    blurb:
+      tr: Okuduklarım, izlediklerim, kullandıklarım, biriktirdiğim linkler ve diğer hesaplarım.
+      en: Books, films, gear, bookmarks and everything else.
+    items:
+      - { label: okuduklarım,   handle: "read",      url: "/read/" }
+      - { label: izlediklerim,  handle: "watched",   url: "/watched/" }
+      - { label: dinlediklerim, handle: "listens",   url: "/listens/" }
+      - { label: kullandıklarım, handle: "uses",     url: "/uses/" }
+      - { label: yer imleri,    handle: "bookmarks", url: "/bookmarks/" }
+      - { label: x,          handle: "@abdullahoguk", url: "https://x.com/abdullahoguk", primary: true }
+      - { label: goodreads,  handle: "what I read",   url: "https://www.goodreads.com/user/show/30322141-abdullah" }
+      - { label: soundcloud, handle: "abdullahoguk",  url: "https://soundcloud.com/abdullahoguk" }
+      - { label: telegram,   handle: "@abdullahoguk", url: "https://t.me/abdullahoguk", sameAs: false }
+      - { label: email,      handle: "merhaba@abdullahog.uk", url: "mailto:merhaba@abdullahog.uk", primary: true, sameAs: false }
+
+# Goodreads: kitaplar CSV dışa aktarımından gelir (bkz. README → /read).
+goodreads:
+  profile: https://www.goodreads.com/user/show/30322141-abdullah

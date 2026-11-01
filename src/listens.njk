@@ -1,0 +1,52 @@
+---
+layout: base.njk
+title: dinlediklerim · listens
+schemaKind: collection
+schemaItems: listens
+description: "Abdullah Öğük ne dinliyor: klasik Türk ve Batı müziği, acemaşiran ve nihavend, tekke musikisi, soul, blues, caz, İsmet Özel şiirleri. Playlists and the Tekke Musikisi archive."
+---
+<header class="page-head">
+  <h1>dinlediklerim<span class="en" lang="en">listens</span></h1>
+  <p class="muted">{{ listens.blurb | bi | safe }}</p>
+</header>
+
+{%- if listens.playlists.length %}
+<section class="block">
+  <h2 class="label">playlistler<span class="en" lang="en">playlists</span></h2>
+  <ul class="rows">
+    {%- for p in listens.playlists %}
+    <li>
+      <a href="{{ p.url }}" rel="noopener">{{ p.title }}</a> <span class="muted">{{ p.platform }}</span>
+      {%- if p.note %}<span class="sub">{{ p.note }}</span>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+
+{%- set t = listens.tekke %}
+{%- if t %}
+<section class="block" id="tekke-musikisi">
+  <h2 class="label">{{ t.title }}</h2>
+  <div>
+    <p class="blurb">{{ t.blurb | bi | safe }}</p>
+    <ul class="rows">
+      {%- if t.playlist %}<li><a href="{{ t.playlist.url }}" rel="noopener">{{ t.playlist.title }}</a> <span class="muted">{{ t.playlist.platform }} playlist</span></li>{% endif %}
+      {%- for l in t.links %}
+      <li><a href="{{ l.url }}" rel="noopener">{{ l.label }}</a> <span class="muted">{{ l.handle }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+{%- endif %}
+
+{%- if listens.profiles.length %}
+<section class="block">
+  <h2 class="label">profiller<span class="en" lang="en">profiles</span></h2>
+  <ul class="rows">
+    {%- for l in listens.profiles %}
+    <li><a href="{{ l.url }}" rel="me noopener">{{ l.label }}</a> <span class="muted">{{ l.handle }}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}

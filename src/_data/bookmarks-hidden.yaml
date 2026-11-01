@@ -1,0 +1,9 @@
+# ─────────────────────────────────────────────────────────────
+#  Raindrop içe aktarımında atlanacak linkler (url).
+#  bookmarks.yaml'dan sildiğin bir linkin yeni CSV'yle geri
+#  gelmesini istemiyorsan buraya ekle.
+# ─────────────────────────────────────────────────────────────
+- https://www.opensourceprojects.dev/
+- https://github.com/mahmoud-asdf/vscodeCusotmTheme
+- https://glyphtones.firu.dev/?s=&c=1&o=popular&p=4&e=&page=3
+- https://github.com/opencut-app/opencut

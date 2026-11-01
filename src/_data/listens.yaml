@@ -1,0 +1,65 @@
+# ─────────────────────────────────────────────────────────────
+#  /listens — ne dinliyorum
+#    blurb      sayfanın başındaki cümle { tr, en }
+#    playlists  {title, note, platform, url, featured}
+#               featured: true → ana sayfada da görünür
+#    tekke      Tekke Musikisi: hobi olarak yürüttüğüm arşiv hesapları
+#    profiles   dinleme profillerim
+# ─────────────────────────────────────────────────────────────
+blurb:
+  tr: Klasik olan her şeyi severim; Türk ya da Batı fark etmez. Makamlardan en çok acemaşiran ve nihavend. Yanında tekke musikisi, soul, blues ve caz, Doğu’dan ve Batı’dan şarkılar; arada da İsmet Özel’in sesinden şiirler.
+  en: Anything classical, Turkish or Western, acemaşiran and nihavend above all. Plus Sufi hymns, soul, blues, jazz, songs from East and West, and some poetry.
+playlists:
+  - title: Klasik Türk Musikisi
+    note: makam, peşrev, şarkı, taksim
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7E3JYLTO5Ak1FcxfuUK8LI1
+    featured: true
+  - title: Modern Klasik
+    note: piyano, yaylılar, sakin
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7F6QI-yMTToHmPFCra_AEYb
+    featured: true
+  - title: Soul/Blues/Jazz etc.
+    note: ""
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7Hj87otOjSa7yrrpWxOvRtQ
+    featured: true
+  - title: Yabancı (Diğer)
+    note: ""
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7EP1oI2MMjV20SO7urIMkkf
+    featured: false
+  - title: Yabancı (Doğu)
+    note: ""
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7Ekwt17s1Kfd38j1rDrhUEW
+    featured: false
+  - title: İsmet Özel
+    note: arada dinlediğim şiirler
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7GU52nrNOYx2OR4RaD204Zh
+    featured: false
+tekke:
+  title: Tekke Musikisi
+  blurb:
+    tr: Tekke ve tasavvuf musikisi kayıtlarını derleyip paylaştığım bir hobi arşivi; ilahi, durak, nefes.
+    en: A hobby archive of Sufi lodge music — hymns, recordings and stories.
+  playlist:
+    title: Tekke Musikisi
+    platform: youtube
+    url: https://www.youtube.com/playlist?list=PLDlIcx61WS7GYsf5P_xjwQpjABdOJUJL1
+  links:
+    - label: youtube
+      handle: "@tekke-musikisi"
+      url: https://www.youtube.com/@tekke-musikisi
+    - label: soundcloud
+      handle: tekkemusikisi
+      url: https://soundcloud.com/tekkemusikisi/
+    - label: instagram
+      handle: "@tekke.musikisi"
+      url: https://www.instagram.com/tekke.musikisi
+profiles:
+  - label: soundcloud
+    handle: abdullahoguk
+    url: https://soundcloud.com/abdullahoguk

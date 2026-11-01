@@ -1,0 +1,37 @@
+---
+layout: base.njk
+title: izlediklerim · watched
+schemaKind: collection
+schemaItems: watched
+description: "Abdullah Öğük'ün sevdiği diziler ve filmler: suç ve polisiye, dram ve kült diziler, komedi, Türk sineması ve Nuri Bilge Ceylan, İran ve Orta Doğu sineması, animasyon. Favourite series and films, with IMDb links."
+---
+<header class="page-head">
+  <h1>izlediklerim<span class="en" lang="en">watched</span></h1>
+  <p class="muted">Akılda kalan diziler ve filmler, türlerine göre. Kalın olanlar favorilerim; puanlar IMDb'den.<span class="en" lang="en">Series and films that stayed with me. Favourites in bold; ratings from IMDb.</span></p>
+</header>
+
+{%- set sections = [
+  { type: "series", title: { tr: "diziler", en: "series" } },
+  { type: "movie", title: { tr: "filmler", en: "films" } }
+] %}
+{%- for sec in sections %}
+{%- set groups = watched.groups | where("type", sec.type) %}
+{%- if groups.length %}
+<h2 class="section-title label" id="{{ sec.type }}">{{ sec.title | bi | safe }}</h2>
+{%- for g in groups %}
+<section class="block watch-group">
+  <h3 class="label">{{ g.title | bi | safe }}</h3>
+  <ul class="rows">
+    {%- for w in g.items %}
+    {%- set href = ("https://www.imdb.com/title/" + w.imdb + "/") if w.imdb else (w.url or ("https://www.imdb.com/find/?q=" + (w.title | urlencode))) %}
+    <li{% if w.fav %} class="fav"{% endif %}>
+      <a href="{{ href }}" rel="noopener">{{ w.title }}</a> <span class="muted">{{ w.year }}</span>
+      {%- if w.imdbRating %} <span class="imdb" title="IMDb">{{ w.imdbRating | fixed1 }}</span>{% endif %}
+      {%- if w.note %}<span class="sub">{{ w.note }}</span>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+{%- endif %}
+{%- endfor %}

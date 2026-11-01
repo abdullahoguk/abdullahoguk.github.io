@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+{%- set p = project %}
+<article class="project">
+  <header class="page-head">
+    <p class="muted small"><a href="/projects/">← projeler</a></p>
+    <h1>{{ p.title }}</h1>
+    <p>{{ p.summary | bi | safe }}</p>
+  </header>
+
+  <dl class="facts">
+    <div><dt class="label">yıl<span class="en" lang="en">year</span></dt><dd>{{ p.year }}{% if p.status == "wip" %} · geliştiriliyor{% elif p.status == "archived" %} · arşiv{% endif %}</dd></div>
+    <div><dt class="label">rol<span class="en" lang="en">role</span></dt><dd>{{ p.role }}</dd></div>
+    {%- if p.stack %}<div><dt class="label">teknik<span class="en" lang="en">stack</span></dt><dd>{{ p.stack | join(", ") }}</dd></div>{% endif %}
+    <div><dt class="label">linkler<span class="en" lang="en">links</span></dt><dd>
+      {%- if p.url %}<a href="{{ p.url }}" rel="noopener">{{ p.url | host }}</a>{% endif %}
+      {%- if p.repo %}{% if p.url %} · {% endif %}<a href="{{ p.repo }}" rel="noopener">kaynak kod</a>{% endif %}
+      {%- for l in p.links %} · <a href="{{ l.url }}" rel="noopener">{{ l.label }}</a>{% endfor %}
+    </dd></div>
+  </dl>
+
+  <div class="prose">
+    {{ content | safe }}
+  </div>
+</article>

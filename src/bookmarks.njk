@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: yer imleri · bookmarks
+schemaKind: collection
+schemaItems: bookmarks
+description: "Links Abdullah Öğük keeps coming back to: tools, reading, design and inspiration. Beğendiğim ve kullandığım linkler."
+---
+<header class="page-head">
+  <h1>yer imleri<span class="en" lang="en">bookmarks</span></h1>
+  <p class="muted">Beğendiğim, kullandığım, dönüp dönüp baktığım linkler.<span class="en" lang="en">Links worth keeping.</span></p>
+</header>
+
+{%- set tags = bookmarks | tagCloud %}
+{%- if tags.length %}
+<nav class="tags" aria-label="etiketler">
+  <a href="#" data-tag="" aria-current="true">hepsi <span class="muted">{{ bookmarks.length }}</span></a>
+  {%- for t in tags %}
+  <a href="#{{ t.tag }}" data-tag="{{ t.tag }}">{{ t.tag }} <span class="muted">{{ t.n }}</span></a>
+  {%- endfor %}
+</nav>
+{%- endif %}
+
+<ol class="bookmarks">
+  {%- for b in bookmarks | sortBy("added") %}
+  <li data-tags="{{ b.tags | join(' ') }}">
+    <time class="muted" datetime="{{ b.added | ymd }}">{{ b.added | ymd }}</time>
+    <div>
+      <a href="{{ b.url }}" rel="noopener">{{ b.title }}</a>{% if (b.url | host) != b.title %} <span class="muted">{{ b.url | host }}</span>{% endif %}
+      {%- if b.note %}<span class="sub">{{ b.note }}</span>{% endif %}
+      {%- if b.tags.length %}<span class="sub tagline-s">{% for t in b.tags %}<a href="#{{ t }}">#{{ t }}</a>{% if not loop.last %} {% endif %}{% endfor %}</span>{% endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ol>
+
+<script>
+  // tag filter — works from the URL hash so links like /bookmarks/#design are shareable
+  (function () {
+    var items = document.querySelectorAll(".bookmarks > li");
+    var tabs = document.querySelectorAll(".tags a");
+    function apply() {
+      var tag = decodeURIComponent(location.hash.slice(1));
+      items.forEach(function (li) {
+        li.hidden = !!tag && (" " + li.dataset.tags + " ").indexOf(" " + tag + " ") < 0;
+      });
+      tabs.forEach(function (a) {
+        if (a.dataset.tag === tag) a.setAttribute("aria-current", "true");
+        else a.removeAttribute("aria-current");
+      });
+    }
+    window.addEventListener("hashchange", apply);
+    apply();
+  })();
+</script>

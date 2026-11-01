@@ -1,0 +1,55 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.author.name }}
+
+> {{ site.author.name }} is a {{ site.author.jobTitle | lower }} ({{ site.author.jobTitleTr }}) based in {{ site.author.location.city }}, Türkiye, working on the web. Never far from music: anything classical, Turkish or Western (favourite makams: acemaşiran, nihavend). Also designs (square Kufic / makılî, type, posters, interfaces), takes photos chasing natural light, reads, cycles, walks in nature and loves cats.
+
+Canonical site: {{ site.url }}/
+Contact: {{ site.author.email }}
+Languages: Turkish (native), English.
+Known as: {{ site.author.alternateName | join(", ") }}
+
+## Pages
+
+- [Home]({{ site.url }}/): short bio and all profiles
+- [Projects]({{ site.url }}/projects/): things built or run by {{ site.author.givenName }}
+- [Resume]({{ site.url }}/resume/): experience, education, skills
+- [Blog]({{ site.url }}/blog/): writing (RSS: {{ site.url }}/feed.xml)
+- [Read]({{ site.url }}/read/): books by year, mostly Turkish literature, poetry (İsmet Özel), thought and Sufism
+- [Watched]({{ site.url }}/watched/): series and films by genre (crime & detective, drama & cult, comedy, Turkish series; Turkish cinema incl. Nuri Bilge Ceylan, Iranian & Middle Eastern cinema, crime & action, animation), favourites marked, with IMDb links
+- [Uses]({{ site.url }}/uses/): gear and software
+- [Listens]({{ site.url }}/listens/): playlists and music, incl. the Tekke Musikisi archive
+- [Bookmarks]({{ site.url }}/bookmarks/): links worth keeping, tagged
+
+## Experience
+{% for e in resume.experience %}
+- {{ e.role }} @ {{ e.org }}{% if e.place %}, {{ e.place }}{% endif %} ({{ e.start }}–{{ e.end or "present" }})
+{%- endfor %}
+
+## Projects
+{% for p in projects %}
+- {{ p.title }}{% if p.url %} ({{ p.url }}){% endif %}{% if p.status == "wip" %} [in development]{% elif p.status == "archived" %} [archived]{% endif %} — {{ p.summary | en }}{% if p.repo %} Source: {{ p.repo }}{% endif %}
+{%- endfor %}
+
+## Work at Serbay and Kod8
+Products: {% for p in work.products %}{{ p.title }}{% if p.url %} ({{ p.url }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}.
+Some websites built there: {% for s in work.sites %}{{ s.title }} ({{ s.url }}){% if not loop.last %}, {% endif %}{% endfor %}.
+
+## Music
+{{ listens.blurb | en }}
+{% for p in listens.playlists %}
+- {{ p.title }}: {{ p.url }}
+{%- endfor %}
+- {{ listens.tekke.title }} (hobby archive of Sufi music): {% for l in listens.tekke.links %}{{ l.url }}{% if not loop.last %}, {% endif %}{% endfor %}
+
+## Profiles
+{% for g in site.links %}{% for l in g.items %}{% if l.url.startsWith("http") %}
+- {{ l.label }} ({{ g.title | en }}): {{ l.url }}
+{%- endif %}{% endfor %}{% endfor %}
+
+## Recent writing
+{% for post in collections.posts | limit(10) %}
+- [{{ post.data.title }}]({{ post.url | absUrl(site.url) }}) — {{ post.date | ymd }}
+{%- endfor %}

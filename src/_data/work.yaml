@@ -1,0 +1,51 @@
+# ─────────────────────────────────────────────────────────────
+#  /projects → "Serbay ve Kod8'de" bölümü
+#    products  Kod8'de geliştirilmesinde yer aldığım ürünler
+#    sites     Serbay ve Kod8'de yapımında yer aldığım web sitelerinden bazıları
+# ─────────────────────────────────────────────────────────────
+products:
+  - title: Kod8
+    url: https://kod8.net/
+    summary:
+      tr: İşletmeleri hazır web sitesi, optik programı, QR menü ve haber sitesiyle dijitale taşıyan platform.
+      en: A platform that takes small businesses online.
+  - title: Kod8 İçerik Yönetim Sistemi
+    summary:
+      tr: Kod8 sitelerinin arkasındaki içerik yönetim sistemi.
+      en: The CMS behind Kod8 websites.
+  - title: Rehber8
+    url: https://www.rehber8.net/
+    summary:
+      tr: Kod8 kullanan şirketlerin yer aldığı ücretsiz firma rehberi.
+      en: A free directory of companies on Kod8.
+  - title: Emlak8
+    summary:
+      tr: Emlak ofisleri için web sitesi ve ilan yönetimi.
+      en: Websites and listings for real-estate offices.
+  - title: Haber8
+    summary:
+      tr: Yerel haber siteleri için yayın sistemi.
+      en: A publishing system for local news sites.
+  - title: OptikPro
+    summary:
+      tr: Optik mağazaları için yönetim programı.
+      en: Management software for opticians.
+  - title: Vua QR Menü
+    summary:
+      tr: Restoran ve kafeler için dijital QR menü.
+      en: Digital QR menus for restaurants and cafés.
+sites:
+  - { title: TM Turkey Gıda, url: "https://tmturkey.com.tr/", kind: gıda }
+  - { title: DMall, url: "https://dmall.com.tr/", kind: alışveriş merkezi }
+  - { title: İştirak Şehircilik, url: "https://istirak.com.tr/", kind: konut & inşaat }
+  - { title: Abant Kahvecisi, url: "https://abantkahvecisi.com/", kind: kafe }
+  - { title: Esmak Makine, url: "https://esmakmakine.com.tr/", kind: makine sanayi }
+  - { title: Schmid Pekintaş Energy, url: "https://schmid-pekintas.com/", kind: güneş enerjisi }
+  - { title: Aluform Pekintaş, url: "https://aluform.com.tr/", kind: yapı sistemleri }
+  - { title: Pekintaş Construction, url: "https://pekintas.com.tr/", kind: prefabrik yapılar }
+  - { title: Kefeli Sanat, url: "https://www.kefelisanat.com/", kind: tiyatro }
+  - { title: TGM Kule Vinç, url: "https://tgmkulevinc.com.tr/", kind: kule vinç }
+  - { title: MÜSİAD Düzce, url: "https://www.musiadduzce.com/", kind: dernek }
+  - { title: Düzce'ye Gelsene, url: "https://duzceyegelsene.com/", kind: şehir rehberi }
+  - { title: Düzce TSO, url: "https://duzcetso.org.tr/", kind: ticaret ve sanayi odası }
+  - { title: The Oba Hotel, url: "https://theobahotel.com/", kind: otel }

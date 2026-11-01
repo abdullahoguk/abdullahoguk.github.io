@@ -1,0 +1,760 @@
+# ─────────────────────────────────────────────────────────────
+#  /bookmarks — beğendiğim, kullandığım linkler
+#    title  başlık
+#    url    link
+#    note   kısa not (opsiyonel)
+#    tags   etiketler [design, dev, tool, read, …]
+#    added  eklenme tarihi (YYYY-MM-DD) — liste buna göre sıralanır
+#  Panelden (npm run panel) de eklenebilir.
+# ─────────────────────────────────────────────────────────────
+- title: Orca
+  url: https://www.onorca.dev/
+  note: Birden çok kodlama agent'ını worktree'lerde yan yana çalıştırmak için.
+  tags:
+    - tool
+    - dev
+  added: "2026-11-01"
+- title: ascii.rest
+  url: https://ascii.rest/#scenes
+  note: "240 animated ascii pieces for web pages, in TypeScript with no dependencies: for React, Next.js, Astro, or one HTML tag. MIT licensed."
+  tags:
+    - design
+    - tool
+    - ascii
+  added: "2026-11-01"
+- title: ASCII Motion
+  url: https://www.ascii-motion.com/
+  note: A powerful browser-based tool for creating, editing, and animating ASCII art.
+  tags:
+    - design
+    - tool
+    - ascii
+  added: "2026-11-01"
+- title: Opus 5.5 Video Prompts
+  url: https://awesomeclaude.ai/opus-video-prompts
+  note: Build a Claude Opus 5.5 video prompt in a minute, or copy one of 14 templates for launch videos, explainers, logo reveals, lyric videos…
+  tags:
+    - ai
+    - video
+    - 3d
+  added: "2026-10-31"
+- title: ASCII Magic
+  url: https://www.ascii-magic.com/
+  note: Free ASCII art generator. Turn photos and videos into ASCII, pixel art, voxel, mosaic, halftone, glitch or LEGO art — in your browser, no…
+  tags:
+    - design
+    - tool
+    - ascii
+    - video
+    - pixel-art
+  added: "2026-10-28"
+- title: OpenCut
+  url: https://opencut.app/
+  note: A simple but powerful video editor that gets the job done. In your browser.
+  tags:
+    - design
+    - tool
+    - video
+  added: "2026-10-27"
+- title: Claude Monet, The Complete Directory
+  url: https://monet.directory/
+  note: All 1,003 paintings by Claude Monet on one page. Discover them, soak in the beauty, and download them freely.
+  tags:
+    - art
+  added: "2026-10-27"
+- title: Space Type Generator
+  url: https://spacetypegenerator.com/
+  tags:
+    - design
+    - inspiration
+    - type
+  added: "2026-10-15"
+- title: Hiroshige
+  url: https://www.hiroshige.org.uk/index.html
+  note: "The Woodblock Prints of Utagawa Hiroshige: a comprehensive illustrated catalogue and reference."
+  tags:
+    - art
+  added: "2026-10-15"
+- title: 3D Lithophane Maker
+  url: https://www.3d-lithophane.com/
+  note: "Turn photos into 3D-printable lithophanes and design custom 3D models in your browser. Free STL downloads: flat, curved, cube, globe and…"
+  tags:
+    - diy
+    - 3d-print
+  added: "2026-10-08"
+- title: Artcraft
+  url: https://getartcraft.com/apps
+  note: "Image editing, vector illustration, video, photography, PDFs, motion graphics and page layout: seven native, open-source apps from the…"
+  tags:
+    - design
+    - tool
+    - video
+  added: "2026-10-07"
+- title: fframes
+  url: https://fframes.studio/
+  note: Stop wasting hours waiting for video to be built from the web page in a browser. Vibe code your video on GPU using Rust & SVG framework.
+  tags:
+    - ai
+    - video
+  added: "2026-10-03"
+- title: Book of Shapes
+  url: https://bookofshapes.com/
+  note: A curated gallery of generative patterns. Discover, customize, and download unique algorithmic art.
+  tags:
+    - design
+    - tool
+  added: "2026-09-23"
+- title: Printed Matter Animator
+  url: https://pma.saschafronczek.de/
+  tags:
+    - design
+    - tool
+    - 3d
+  added: "2026-09-23"
+- title: Seal
+  url: https://github.com/JunkFood02/Seal
+  note: 🦭 Video/Audio Downloader for Android, based on yt-dlp
+  tags:
+    - app
+    - video
+  added: "2026-09-20"
+- title: FeralUI · brand board
+  url: https://feralui.dev/brandkit
+  note: "Free brand board builder. Draw a bento grid on a 2048 × 1536 sheet, then fill each tile with a live mockup of your brand: phone, watch,…"
+  tags:
+    - design
+    - tool
+  added: "2026-09-19"
+- title: FeralUI
+  url: https://feralui.dev/gradients
+  note: "A small library of playful, physics-driven React elements: a ceiling pull-cord with a real Verlet rope, a claw-machine captcha, and more."
+  tags:
+    - design
+    - tool
+  added: "2026-09-19"
+- title: Microgroove
+  url: https://lebiro.studio/microgroove/
+  note: 3 mono/poly acid synths · 8 drum lanes of 808/909/samples · samples the mic · resamples itself. $30 hardware + a 3D printer.
+  tags:
+    - diy
+    - 3d-print
+  added: "2026-09-14"
+- title: GLYPH Immersive
+  url: https://glyph.kateander.com/
+  tags:
+    - design
+    - tool
+    - glyph
+  added: "2026-09-10"
+- title: svg2solid
+  url: https://svg2solid.rknt.de/
+  note: Turn SVGs into multicolour prints
+  tags:
+    - design
+    - tool
+  added: "2026-08-31"
+- title: Nexis
+  url: https://github.com/s4solutionsllc/Nexis
+  note: Cross-platform system optimizer for Linux & macOS. Successor to Stacer (9k+ stars) rebuilt on Qt 6/C++17 with GPU monitoring, Docker…
+  tags:
+    - app
+  added: "2026-08-31"
+- title: OpenReel Video
+  url: https://openreel.video/
+  note: Edit by chatting with an AI agent that controls the full timeline. Bring any model. Keep your media local.
+  tags:
+    - app
+    - video
+  added: "2026-08-27"
+- title: OpenMouse
+  url: https://openmouse.app/
+  note: Tune supported gaming mice in your browser, adjust DPI, polling rate, and sensor settings in one place.
+  tags:
+    - app
+  added: "2026-08-09"
+- title: Simple Video Trimmer
+  url: https://nextbconvert.com/en/video-trim/
+  note: Remove unwanted start or end parts from your videos. A simple, precise tool to trim video clips before sharing. No watermarks, no uploads,…
+  tags:
+    - design
+    - tool
+    - video
+  added: "2026-07-25"
+- title: arabicdesign.ai
+  url: https://arabicdesign.ai/
+  note: Generate an Arabic calligraphy masterpiece with AI. Write your text and get a beautiful Arabic calligraphy design inspired by traditional…
+  tags:
+    - design
+    - tool
+    - type
+  added: "2026-07-23"
+- title: Cutting Mat Wallpaper Pack
+  url: https://robertmccombe.gumroad.com/l/Cuttingmat-wallpaperpack
+  note: Cutting Mat Wallpaper Pack is a collaboration between Rad Bali and Robert McCombe — minimal, grid-inspired designs with a tactile craft…
+  tags:
+    - design
+    - inspiration
+    - wallpaper
+  added: "2026-07-15"
+- title: Coolify
+  url: https://coolify.io/
+  note: Self-hosting platform with superpowers. Deploy apps, databases & 280+ services to your server. Open-source alternative to Heroku.
+  tags:
+    - dev
+    - self-host
+  added: "2026-07-05"
+- title: Beste UI
+  url: https://ui.beste.co/
+  note: A curated collection of React blocks and components built with Tailwind CSS and shadcn/ui. Copy, install, and ship beautiful interfaces…
+  tags:
+    - dev
+  added: "2026-07-03"
+- title: Beste
+  url: https://beste.co/
+  note: Build your website in hours, not weeks. Free custom domain, 32 languages, unlimited pages. No code, no drag-drop chaos. Start free today.
+  tags:
+    - dev
+  added: "2026-07-03"
+- title: ImageKit · free media hosting
+  url: https://imagekit.io/tools/free-media-hosting/
+  note: Host your media files for free with ImageKit's secure and reliable media hosting service. Share images and videos instantly.
+  tags:
+    - dev
+    - video
+  added: "2026-06-28"
+- title: TinaCMS
+  url: https://tina.io/tinacms
+  note: Edit content live, preview changes instantly, and keep everything version-controlled in your Git repository. TinaCMS gives developers full…
+  tags:
+    - dev
+  added: "2026-06-28"
+- title: Cloudflare Tunnel
+  url: https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/
+  note: How Cloudflare Tunnel works in Zero Trust networking.
+  tags:
+    - dev
+    - self-host
+  added: "2026-06-16"
+- title: VWFNDR
+  url: https://www.vwfndr.camera/about
+  note: To bring back the fun and magic of photography. We live and breathe design — and we love cameras. The photography industry deserves more…
+  tags:
+    - app
+  added: "2026-06-13"
+- title: Scrapegraph-ai
+  url: https://github.com/ScrapeGraphAI/Scrapegraph-ai
+  note: Python scraper based on AI
+  tags:
+    - dev
+  added: "2026-06-12"
+- title: Unsection
+  url: https://www.unsection.com/
+  note: Browse 4,000+ curated website sections from top brands. Filter by hero, feature, pricing, testimonial designs. New sections added weekly.…
+  tags:
+    - design
+    - inspiration
+  added: "2026-06-11"
+- title: Footer
+  url: https://www.footer.design/
+  note: Footer is a curated gallery of the top website footer inspiration on earth. Find the footers you need and sort by type and style.
+  tags:
+    - design
+    - inspiration
+  added: "2026-06-11"
+- title: Navbar Gallery
+  url: https://www.navbar.gallery/
+  note: Navbar Gallery is a collection of the best website navbar inspiration designs on the web. Find the ideal navigation example for your…
+  tags:
+    - design
+    - inspiration
+  added: "2026-06-08"
+- title: Tolaria
+  url: https://tolaria.md/
+  note: A second brain for the AI era. Free forever, local-first, Markdown-based, Git-ready, and AI-friendly.
+  tags:
+    - app
+  added: "2026-06-08"
+- title: Meshic
+  url: https://meshic.app/
+  note: Free tool for ASCII, dithering, shimmer, LEGO, and procedural pattern effects.
+  tags:
+    - design
+    - tool
+    - ascii
+    - hex
+  added: "2026-06-05"
+- title: Convert3D · compress
+  url: https://convert3d.org/app/compress
+  tags:
+    - design
+    - tool
+    - 3d
+  added: "2026-06-02"
+- title: Lummi
+  url: https://www.lummi.ai/
+  note: Browse our collection of unique, royalty-free AI stock photos, illustrations, and 3D. Perfect for all your creative projects, each image…
+  tags:
+    - design
+    - inspiration
+    - 3d
+  added: "2026-06-01"
+- title: Efecto
+  url: https://efecto.app/
+  note: The design tool where AI agents are first-class. Artboards, layers, auto-layout, 66 MCP tools. Free.
+  tags:
+    - design
+    - tool
+    - ui
+  added: "2026-06-01"
+- title: Newt
+  url: https://newt.sh/
+  note: Paint like a raster editor. Export clean, editable code.
+  tags:
+    - design
+    - tool
+    - pixel-art
+  added: "2026-06-01"
+- title: openvid
+  url: https://openvid.dev/en
+  note: Free AI-powered online video editor. Screen recorder, cinematic zooms, professional mockups, and HD export. No watermark.
+  tags:
+    - design
+    - tool
+    - video
+  added: "2026-05-27"
+- title: Awwwards
+  url: https://www.awwwards.com/
+  note: Awwwards are the Website Awards that recognize and promote the talent and effort of the best developers, designers and web agencies in the…
+  tags:
+    - design
+    - inspiration
+  added: "2026-05-26"
+- title: Motion
+  url: https://motion.dev/
+  note: Motion (prev Framer Motion) is a fast, production-grade animation library for React, JavaScript and Vue. Build smooth UI animations at a…
+  tags:
+    - dev
+    - animation
+    - frontend
+  added: "2026-05-24"
+- title: PortSwigger
+  url: https://portswigger.net/
+  note: PortSwigger offers tools for web application security, testing, & scanning. Choose from a range of security tools, & identify the very…
+  tags:
+    - dev
+    - security
+  added: "2026-05-24"
+- title: VideoFlow
+  url: https://videoflow.dev/
+  note: Open-source TypeScript toolkit to turn JSON into videos. 27 transitions, 42 GLSL effects, layer groups. Render in the browser, on a…
+  tags:
+    - design
+    - tool
+    - video
+    - frontend
+    - library
+  added: "2026-05-24"
+- title: Godly
+  url: https://godly.website/
+  note: A hand-picked curation of over 1,000 of the best AI, Web3, portfolio, and other outstanding websites on the Internet.
+  tags:
+    - design
+    - inspiration
+  added: "2026-05-23"
+- title: Cosmos
+  url: https://www.cosmos.so/
+  note: Cosmos is a visual inspiration platform for creatives — a Pinterest alternative built for designers, photographers, architects, artists,…
+  tags:
+    - design
+    - inspiration
+  added: "2026-05-23"
+- title: MCP Market
+  url: https://mcpmarket.com/
+  note: Discover MCP servers that connect Claude and Cursor to tools like Figma, Databricks, Storybook, and Ghidra. Browse the MCP Market to get…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: SkillMD.ai
+  url: https://skillmd.ai/
+  note: The open directory for agent skills. Discover, create, and share SKILL.md files for AI coding assistants.
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: Remotion · agent skills
+  url: https://www.remotion.dev/docs/ai/skills
+  note: Remotion maintains a list of Agent Skills that define best practices for working in Remotion projects.
+  tags:
+    - ai
+    - claude
+    - video
+    - animation
+  added: "2026-05-23"
+- title: awesome-claude-skills
+  url: https://github.com/ComposioHQ/awesome-claude-skills
+  note: A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: Awesome Claude Skills
+  url: https://awesome-skills.com/
+  note: Discover 153+ curated skills and plugins for Claude Code. Document handling, frontend design, testing, AI tools and more.
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: claude-code-skill-factory
+  url: https://github.com/alirezarezvani/claude-code-skill-factory
+  note: Claude Code Skill Factory — A powerful open-source toolkit for building and deploying production-ready Claude Skills, Code Agents, custom…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: Skill_Seekers
+  url: https://github.com/yusufkaraaslan/Skill_Seekers
+  note: Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: claude-code-safety-net
+  url: https://github.com/kenryu42/claude-code-safety-net
+  note: A coding agent hook that acts as a safety net, catching destructive git and filesystem commands before they execute. Supports Codex,…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: dev-browser
+  url: https://github.com/SawyerHood/dev-browser
+  note: A Claude Skill to give your agent the ability to use a web browser
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: superpowers
+  url: https://github.com/obra/superpowers
+  note: An agentic skills framework & software development methodology that works.
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: claude-skills (alirezarezvani)
+  url: https://github.com/alirezarezvani/claude-skills
+  note: 322+ Claude Code skills & agent skills & plugins for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering,…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: claude-skills (Jeffallan)
+  url: https://github.com/Jeffallan/claude-skills
+  note: 66 Specialized Skills for Full-Stack Developers. Transform Claude Code into your expert pair programmer.
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: aitmpl · Claude Code skills
+  url: https://aitmpl.com/skills/
+  note: Browse skills for Claude Code. Pre-built templates and configurations to enhance your AI development workflow. Install with a single npx…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: awesome-claude-code-subagents
+  url: https://github.com/VoltAgent/awesome-claude-code-subagents
+  note: A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: antigravity-awesome-skills
+  url: https://github.com/sickn33/antigravity-awesome-skills
+  note: Installable GitHub library of 1,400+ agentic skills for Claude Code, Cursor, Codex CLI, Gemini CLI, Antigravity, and more. Includes…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: interface-design
+  url: https://github.com/Dammyjay93/interface-design
+  note: Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: n8n-skills
+  url: https://github.com/czlonkowski/n8n-skills
+  note: n8n skillset for Claude Code to build flawless n8n workflows
+  tags:
+    - ai
+    - claude
+    - self-host
+  added: "2026-05-23"
+- title: learn-claude-code
+  url: https://github.com/shareAI-lab/learn-claude-code
+  note: Bash is all you need - A nano claude code–like 「agent harness」, built from 0 to 1
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: Anthropic-Cybersecurity-Skills
+  url: https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+  note: "754 structured cybersecurity skills for AI agents · Mapped to 5 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND & NIST AI RMF…"
+  tags:
+    - ai
+    - claude
+    - security
+  added: "2026-05-23"
+- title: claude-code-guide
+  url: https://github.com/zebbern/claude-code-guide
+  note: Claude Code Guide - Setup, Commands, workflows, agents, skills & tips-n-tricks go from beginner to power user!
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: geo-seo-claude
+  url: https://github.com/zubair-trabzada/geo-seo-claude
+  note: GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand…
+  tags:
+    - ai
+    - claude
+    - seo
+  added: "2026-05-23"
+- title: Understand-Anything
+  url: https://github.com/Lum1104/Understand-Anything
+  note: Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: prompt-master
+  url: https://github.com/nidhinjs/prompt-master
+  note: A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: claude-seo
+  url: https://github.com/AgriciDaniel/claude-seo
+  note: Universal SEO skill for Claude Code. 25 sub-skills + 18 sub-agents covering technical SEO, E-E-A-T, schema, GEO/AEO, backlinks, local SEO,…
+  tags:
+    - ai
+    - claude
+    - seo
+  added: "2026-05-23"
+- title: stitch-skills
+  url: https://github.com/google-labs-code/stitch-skills
+  note: A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for…
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: nothing-design-skill
+  url: https://github.com/dominikmartn/nothing-design-skill/tree/main
+  note: A Claude Code skill for generating UI in the Nothing design language. Monochrome, typographic, industrial.
+  tags:
+    - ai
+    - claude
+  added: "2026-05-23"
+- title: Remotion
+  url: https://www.remotion.dev/
+  tags:
+    - ai
+    - video
+    - animation
+  added: "2026-05-23"
+- title: claude-code-best-practice
+  url: https://github.com/shanraisshan/claude-code-best-practice
+  note: from vibe coding to agentic engineering - practice makes claude perfect
+  tags:
+    - dev
+  added: "2026-05-16"
+- title: open-design
+  url: https://github.com/nexu-io/open-design
+  note: 🎨 Local-first, open-source alternative to Anthropic's Claude Design. ⚡ 19 Skills · ✨ 71 brand-grade Design Systems 🖼 Generate web ·…
+  tags:
+    - ai
+    - video
+  added: "2026-05-15"
+- title: Terraink
+  url: https://terraink.app/
+  note: Free online map poster and wallpaper generator. Design custom, print-ready map art for any city or location — export as PNG, PDF, or SVG.…
+  tags:
+    - design
+    - tool
+    - wallpaper
+  added: "2026-04-12"
+- title: NothingHome
+  url: https://github.com/nemy-new/NothingHome
+  tags:
+    - nothing
+  added: "2026-04-09"
+- title: Gadgetbridge
+  url: https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/
+  note: Use your smart watch and other bluetooth devices and keep your data private!
+  tags:
+    - nothing
+  added: "2026-04-09"
+- title: Nothing-Clock
+  url: https://github.com/SushiiReboot/Nothing-Clock?tab=readme-ov-file
+  note: A clock app for Nothing phone(1) and Nothing phone(2)
+  tags:
+    - nothing
+  added: "2026-04-09"
+- title: Essential Widgets
+  url: https://essential-dots.github.io/#widgets
+  tags:
+    - nothing
+  added: "2026-04-09"
+- title: Linux-Affinity-Installer
+  url: https://github.com/ryzendew/Linux-Affinity-Installer
+  note: A repository that helps users get affinity software working on GNU/Linux 🐧
+  tags:
+    - design
+    - tool
+  added: "2026-04-08"
+- title: Anime.js
+  url: https://animejs.com/
+  note: A fast, multipurpose and lightweight JavaScript animation library
+  tags:
+    - dev
+    - animation
+  added: "2026-04-06"
+- title: Gea
+  url: https://geajs.com/
+  note: A batteries-included, reactive JavaScript UI framework with compile-time JSX, proxy-based stores, and built-in routing. No virtual DOM.…
+  tags:
+    - dev
+  added: "2026-04-06"
+- title: n8n · hosting docs
+  url: https://docs.n8n.io/hosting/
+  note: Access n8n hosting documentation and guides. Find comprehensive resources to help you set up and manage your self-hosted n8n instances.
+  tags:
+    - dev
+    - self-host
+  added: "2026-04-06"
+- title: Google Antigravity
+  url: https://antigravity.google/
+  note: Google Antigravity - Build the new way
+  tags:
+    - dev
+  added: "2026-04-06"
+- title: n8n
+  url: https://n8n.io/
+  note: n8n is a workflow automation platform that uniquely combines AI capabilities with business process automation, giving technical teams the…
+  tags:
+    - dev
+    - self-host
+  added: "2026-04-06"
+- title: Oat
+  url: https://oat.ink/
+  tags:
+    - dev
+  added: "2026-04-06"
+- title: Kan.bn
+  url: https://kan.bn/
+  tags:
+    - dev
+  added: "2026-04-06"
+- title: Uptime Kuma
+  url: https://alternativeto.net/software/uptime-kuma/about/
+  note: Advanced self-hosted tool for tracking uptime across multiple services with reactive UX, interval checks, various notifications, and…
+  tags:
+    - dev
+    - self-host
+  added: "2026-04-06"
+- title: Bun
+  url: https://bun.com/
+  note: A fast all-in-one JavaScript runtime and toolkit
+  tags:
+    - dev
+  added: "2026-04-06"
+- title: Newtab
+  url: https://nothinguinewtab.vercel.app/
+  tags:
+    - nothing
+  added: "2026-04-06"
+- title: Shot with Nothing
+  url: https://shotwithnothing.crd.co/
+  note: A hub for Nothing Community Photographers
+  tags:
+    - nothing
+  added: "2026-04-06"
+- title: Glyphtones
+  url: https://glyphtones.firu.dev/?s=&c=0&o=latest&p=4&e=&page=2
+  note: A simple audio-sharing platform for Nothing Phone users.
+  tags:
+    - nothing
+    - glyph
+  added: "2026-04-06"
+- title: nothingfont
+  url: https://github.com/xeji01/nothingfont
+  note: nothing.tech typeface
+  tags:
+    - nothing
+    - type
+  added: "2026-04-06"
+- title: Cassette
+  url: https://github.com/Chipik0/Cassette
+  note: Create stunning Glyphtones. Easier than ever before.
+  tags:
+    - nothing
+    - glyph
+  added: "2026-04-06"
+- title: Nothing Archive
+  url: https://spike0en.github.io/nothing_archive/
+  note: Your ultimate source for Nothing OS firmware, community resources, and guides
+  tags:
+    - nothing
+  added: "2026-04-06"
+- title: Nothing Playground
+  url: https://playground.nothing.tech/
+  note: to build something uniquely yours, and discover the creativity of the Nothing Community.
+  tags:
+    - nothing
+  added: "2026-04-06"
+- title: developer-portfolios
+  url: https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file
+  note: A list of developer portfolios for your inspiration
+  tags:
+    - design
+    - inspiration
+  added: "2026-04-06"
+- title: Matrices
+  url: https://udaign.github.io/matrices/
+  note: Create and use dot-matrix styled imagery to show love for Nothing.
+  tags:
+    - design
+    - tool
+    - wallpaper
+  added: "2026-04-06"
+- title: Dotify
+  url: https://dotify-client.vercel.app/
+  note: Generated Nothing Based Dot Pattern Images.
+  tags:
+    - design
+    - tool
+  added: "2026-04-06"
+- title: Penpot
+  url: https://penpot.app/
+  note: Penpot is the open-source free design software that connects designers and developers with no handoff drama. Prototyping, UI design and…
+  tags:
+    - design
+    - tool
+  added: "2026-04-06"
+- title: Spline
+  url: https://spline.design/
+  note: Spline is a free 3D design software with real-time collaboration to create web interactive experiences in the browser. Easy 3d modeling,…
+  tags:
+    - design
+    - tool
+    - 3d
+    - animation
+  added: "2026-04-06"
+- title: Uxcel Arcade
+  url: https://app.uxcel.com/arcade
+  note: Enhance your design skills and have fun at the same time with Uxcel arcade games. Improve your ability to identify patterns, spot errors,…
+  tags:
+    - design
+    - tool
+  added: "2026-04-06"

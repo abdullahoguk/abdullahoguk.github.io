@@ -1,0 +1,98 @@
+{%- set pageTitle = (site.homeTitle or site.title) if page.url == "/" else ((title + " · " + site.title) if title else site.title) -%}
+{%- set pageDesc = (description or site.description) | plain -%}
+{%- set canonical = page.url | absUrl(site.url) -%}
+{%- set ogImg = (image or site.ogImage) | absUrl(site.url) -%}
+<!doctype html>
+<html lang="{{ lang or site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ pageTitle }}</title>
+  <meta name="description" content="{{ pageDesc }}">
+  <meta name="author" content="{{ site.author.name }}">
+  <link rel="canonical" href="{{ canonical }}">
+  {%- if noindex %}<meta name="robots" content="noindex">{% endif %}
+
+  <script>
+    /* theme before paint — avoids flash */
+    (function(){try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t;}catch(e){}})();
+  </script>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1a18">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2efe8">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/avatar-logo.png">
+  <link rel="stylesheet" href="/css/site.css">
+
+  {%- if schemaKind == "post" %}{% set ogType = "article" %}{% elif page.url == "/" %}{% set ogType = "profile" %}{% else %}{% set ogType = "website" %}{% endif %}
+  <meta property="og:type" content="{{ ogType }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  <meta property="og:description" content="{{ pageDesc }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ ogImg }}">
+  <meta property="og:locale" content="{{ site.locale }}">
+  <meta property="og:locale:alternate" content="en_US">
+  {%- if page.url == "/" %}
+  <meta property="profile:first_name" content="{{ site.author.givenName }}">
+  <meta property="profile:last_name" content="{{ site.author.familyName }}">
+  {%- endif %}
+  {%- if schemaKind == "post" %}
+  <meta property="article:published_time" content="{{ page.date | isoDate }}">
+  <meta property="article:author" content="{{ site.url }}/">
+  {%- endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@abdullahoguk">
+  <meta name="twitter:creator" content="@abdullahoguk">
+
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }} — blog" href="/feed.xml">
+  <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+  {%- for group in site.links %}{% for l in group.items %}{% if l.sameAs != false and l.url.startsWith("http") %}
+  <link rel="me" href="{{ l.url }}">{% endif %}{% endfor %}{% endfor %}
+
+  {% jsonld %}
+
+  {%- if site.analyticsId %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analyticsId }}"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","{{ site.analyticsId }}");</script>
+  {%- endif %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip" href="#main">skip to content</a>
+  {%- if scene %}
+  <canvas id="scene" aria-hidden="true" data-scene="{{ site.scene or 'auto' }}"{% if site.scenePicker %} data-picker{% endif %}></canvas>
+  {%- endif %}
+
+  <header class="top">
+    <a class="brand" href="/" aria-label="{{ site.title }} — home">a.ö</a>
+    <nav aria-label="primary">
+      <ul>
+        {%- for item in site.nav %}
+        {%- set active = (page.url == item.url) or (item.url != "/" and page.url.startsWith(item.url)) %}
+        <li><a href="{{ item.url }}"{% if active %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    <button class="theme" type="button" aria-label="toggle dark / light" title="dark / light">
+      <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="8" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 .8v2M8 13.2v2M.8 8h2M13.2 8h2M2.9 2.9l1.4 1.4M11.7 11.7l1.4 1.4M2.9 13.1l1.4-1.4M11.7 4.3l1.4-1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+    </button>
+  </header>
+
+  <main id="main" class="wrap">
+    {{ content | safe }}
+  </main>
+
+  <footer class="foot wrap">
+    <span>© {{ buildYear }} {{ site.author.name }}</span>
+    <span><a href="/resume/">resume</a> / <a href="/feed.xml">rss</a> / <a href="/llms.txt">llms.txt</a></span>
+  </footer>
+
+  <script src="/js/theme.js" defer></script>
+  {%- if scene %}
+  {%- if site.scenePicker %}
+  <button class="scene-switch" type="button" hidden aria-label="change background scene"><span class="muted">scene</span> <span data-scene-label></span></button>
+  {%- endif %}
+  <script src="/js/scene.js" defer></script>
+  {%- endif %}
+</body>
+</html>

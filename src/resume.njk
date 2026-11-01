@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: özgeçmiş · resume
+schemaKind: resume
+description: "Resume of Abdullah Öğük, web developer. Özgeçmiş: deneyim, eğitim ve yetkinlikler."
+---
+<article class="resume">
+  <header class="page-head">
+    <h1>{{ site.author.name }}</h1>
+    <p>{{ site.author.jobTitle }} <span class="muted">/ {{ site.author.jobTitleTr }}</span></p>
+    <p class="muted small"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> · {{ site.url | host }} · {{ site.author.location.city }}</p>
+  </header>
+
+  <p class="lead">{{ resume.summary | bi | safe }}</p>
+
+  <section class="block">
+    <h2 class="label">deneyim<span class="en" lang="en">experience</span></h2>
+    {%- for e in resume.experience %}
+    <div class="entry">
+      <div class="meta">{{ e | period }}{% if e.place %}<br>{{ e.place }}{% endif %}</div>
+      <div>
+        <h3>{{ e.role }} <span class="muted">@ {% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</span></h3>
+        {%- if e.notes.length %}<ul>{% for n in e.notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
+      </div>
+    </div>
+    {%- endfor %}
+  </section>
+
+  <section class="block">
+    <h2 class="label">eğitim<span class="en" lang="en">education</span></h2>
+    {%- for e in resume.education %}
+    <div class="entry">
+      <div class="meta">{{ e | period }}</div>
+      <div><h3>{{ e.degree }}, {{ e.field }} <span class="muted">@ {% if e.url %}<a href="{{ e.url }}" rel="noopener">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}</span></h3></div>
+    </div>
+    {%- endfor %}
+  </section>
+
+  <section class="block">
+    <h2 class="label">yetkinlikler<span class="en" lang="en">skills</span></h2>
+    {%- for s in resume.skills %}
+    <div class="entry"><div class="meta">{{ s.group }}</div><div>{{ s.items | join(", ") }}</div></div>
+    {%- endfor %}
+  </section>
+
+  <section class="block">
+    <h2 class="label">diller<span class="en" lang="en">languages</span></h2>
+    {%- for l in resume.languages %}
+    <div class="entry"><div class="meta">{{ l.name }}</div><div class="muted">{{ l.level }}</div></div>
+    {%- endfor %}
+  </section>
+
+  <p class="muted small no-print"><button type="button" class="linkish" onclick="window.print()">print / save as pdf</button></p>
+</article>
