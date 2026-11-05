@@ -63,6 +63,17 @@ skills:
       - React
       - PWA
       - Web Components
+  - group: Backend
+    items:
+      - Node.js
+      - REST APIs
+      - MySQL
+      - ASP Classic
+  - group: Servers & hosting
+    items:
+      - Windows Server
+      - Plesk
+      - Web hosting management
   - group: Design
     items:
       - Typography

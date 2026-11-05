@@ -9,7 +9,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 {%- macro linkList(items) -%}
 <ul class="rows">
   {%- for l in items %}
-  <li><a href="{{ l.url }}"{% if l.url.startsWith("http") %} rel="me noopener"{% endif %}>{{ l.label }}</a> <span class="muted">{{ l.handle }}</span></li>
+  <li><a href="{{ l.url }}"{% if l.url.startsWith("http") %} rel="me noopener"{% endif %}>{% if l.icon %}{% icon l.icon %}{% endif %}{{ l.label }}</a> <span class="muted">{{ l.handle }}</span></li>
   {%- endfor %}
 </ul>
 {%- endmacro -%}
@@ -17,7 +17,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 {%- macro linkSection(id) -%}
 {%- for g in site.links %}{% if g.id == id %}
 <section class="block" id="{{ g.id }}">
-  <h2 class="label">{{ g.title | bi | safe }}</h2>
+  <h2 class="label">{% icon g.icon %}{{ g.title | bi | safe }}</h2>
   <div>
     <p class="blurb">{{ g.blurb | bi | safe }}</p>
     {{ linkList(g.items) }}
@@ -36,7 +36,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 
   {%- if site.now.length %}
   <div class="now">
-    <h2 class="label">şimdi<span class="en" lang="en">now</span></h2>
+    <h2 class="label">{% icon "clock" %}şimdi<span class="en" lang="en">now</span></h2>
     <div>
       {%- for p in site.now %}
       <p>{{ p | bi | safe }}</p>
@@ -47,9 +47,9 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 
   <p class="primary-links">
     {%- for group in site.links %}{% for l in group.items %}{% if l.primary %}
-    <a href="{{ l.url }}" rel="me noopener">{{ l.label }}</a><span aria-hidden="true"> / </span>
+    <a href="{{ l.url }}" rel="me noopener">{% icon l.icon if l.icon else l.label %}{{ l.label }}</a><span aria-hidden="true"> / </span>
     {%- endif %}{% endfor %}{% endfor %}
-    <a href="/resume/">resume</a>
+    <a href="/resume/">{% icon "text" %}resume</a>
   </p>
 </section>
 
@@ -57,7 +57,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 
 {%- if resume.experience.length %}
 <section class="block" id="experience">
-  <h2 class="label">deneyim<span class="en" lang="en">experience</span></h2>
+  <h2 class="label">{% icon "briefcase" %}deneyim<span class="en" lang="en">experience</span></h2>
   <div>
     <ol class="rows timeline">
       {%- for e in resume.experience %}
@@ -75,7 +75,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 {%- set featured = projects | where("featured", true) %}
 {%- if featured.length %}
 <section class="block" id="projects">
-  <h2 class="label">projeler<span class="en" lang="en">projects</span></h2>
+  <h2 class="label">{% icon "folder" %}projeler<span class="en" lang="en">projects</span></h2>
   <div>
     <ul class="rows">
       {%- for p in featured %}
@@ -95,7 +95,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 {{ linkSection("photo") }}
 
 <section class="block" id="listens">
-  <h2 class="label">dinlediklerim<span class="en" lang="en">listens</span></h2>
+  <h2 class="label">{% icon "music" %}dinlediklerim<span class="en" lang="en">listens</span></h2>
   <div>
     <p class="blurb">{{ listens.blurb | bi | safe }}</p>
     <ul class="rows">
@@ -112,7 +112,7 @@ description: "Abdullah Öğük — Düzce'de web yazılım geliştirici. Musiki,
 
 {%- if collections.posts.length %}
 <section class="block" id="writing">
-  <h2 class="label">yazılar<span class="en" lang="en">writing</span></h2>
+  <h2 class="label">{% icon "write" %}yazılar<span class="en" lang="en">writing</span></h2>
   <ul class="rows">
     {%- for post in collections.posts | limit(3) %}
     <li><a href="{{ post.url }}">{{ post.data.title }}</a> <time class="muted" datetime="{{ post.date | ymd }}">{{ post.date | ymd }}</time></li>

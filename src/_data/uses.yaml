@@ -4,7 +4,6 @@
 #    groups  kategori başlıkları → items[{name, note?, url?, image?}]
 #            image: o ürünün tek fotoğrafı (opsiyonel, /img/uses/... yolu)
 # ─────────────────────────────────────────────────────────────
-photo: ""
 groups:
   - title:
       tr: masa
@@ -12,15 +11,15 @@ groups:
     items:
       - name: ASUS Vivobook Pro 15 OLED
         note: her gün · daily driver
-      - name: Philips Evnia 27"
+      - name: Philips Evnia 27" 4K
         note: monitör
-      - name: North Bayou monitör standı
+      - name: North Bayou Monitör Standı
       - name: Aigo A87
         note: mekanik klavye
       - name: Logitech M590
-        note: sessiz fare
+        note: fare
       - name: Seduna Benin Fab
-        note: ofis koltuğu
+        note: çalışma koltuğu
   - title:
       tr: kamera
       en: camera
@@ -46,10 +45,11 @@ groups:
     items:
       - name: Linux Mint
         url: https://linuxmint.com
+        note: günlük&iş
       - name: VS Code
         url: https://code.visualstudio.com
       - name: Orca
-        note: agent'larla paralel çalışmak için
+        note: agent'larla paralel çalışma
         url: https://www.onorca.dev/
       - name: Claude Code
         url: https://claude.com/product/claude-code
@@ -64,6 +64,7 @@ groups:
     items:
       - name: Inkscape
         url: https://inkscape.org
+        note: vektörel tasarım
       - name: darktable
         note: raw düzenleme
         url: https://www.darktable.org
@@ -104,5 +105,3 @@ groups:
       - name: Cloudflare Pages
         note: hosting
         url: https://pages.cloudflare.com
-      - name: El yazımı CSS ve bir canvas
-        note: framework yok

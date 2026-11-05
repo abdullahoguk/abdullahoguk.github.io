@@ -11,6 +11,7 @@ npm run build    # çıktı: _site/
 npm run new:post -- "Yazı başlığı"
 npm run goodreads -- ~/Downloads/goodreads_library_export.csv
 npm run raindrop -- ~/Downloads/<raindrop-export>.csv
+npm run imdb         # watched.yaml içindeki IMDb puanlarını günceller
 ```
 
 ## İçerik nerede?

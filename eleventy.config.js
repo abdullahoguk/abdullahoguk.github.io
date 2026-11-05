@@ -1,5 +1,6 @@
 import yaml from "js-yaml";
 import { buildGraph, mappers, plain } from "./lib/schema.js";
+import { icon } from "./lib/icons.js";
 
 export const config = {
   dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
@@ -108,6 +109,8 @@ export default function (eleventyConfig) {
   const sortable = (v) => (v instanceof Date ? v.toISOString() : String(v ?? ""));
   eleventyConfig.addFilter("sortBy", (arr, key) => [...(arr || [])].sort((a, b) => sortable(b[key]).localeCompare(sortable(a[key]))));
   // {% jsonld %} — emits the page's schema.org @graph (see lib/schema.js)
+  eleventyConfig.addShortcode("icon", icon);
+
   eleventyConfig.addShortcode("jsonld", function () {
     const d = this.ctx;
     const kind = d.schemaKind || "page";

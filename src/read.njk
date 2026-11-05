@@ -6,7 +6,7 @@ schemaItems: books
 description: "Books Abdullah Öğük is reading and has read. Okuduğum ve okumakta olduğum kitaplar."
 ---
 <header class="page-head">
-  <h1>okuduklarım<span class="en" lang="en">read</span></h1>
+  <h1>{% icon "book" %}okuduklarım<span class="en" lang="en">read</span></h1>
   <p class="muted">{{ reading.read.length | roundDown }}+ kitap, okuduğum yıla göre. Rafın tamamı <a href="{{ reading.profile }}" rel="me noopener">goodreads</a>'te.<span class="en" lang="en">Books by the year I finished them.</span></p>
 </header>
 

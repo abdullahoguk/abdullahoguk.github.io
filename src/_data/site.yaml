@@ -94,6 +94,7 @@ nav:
 # ─────────────────────────────────────────────────────────────
 links:
   - id: dev
+    icon: code
     title: { tr: yazılım, en: dev }
     blurb:
       tr: Hızlı, erişilebilir ve özenle işlenmiş web arayüzleri geliştiriyorum.
@@ -104,6 +105,7 @@ links:
       - { label: linkedin, handle: "@abdullahoguk", url: "https://www.linkedin.com/in/abdullahoguk", primary: true }
 
   - id: design
+    icon: pen
     title: { tr: tasarım, en: design }
     blurb:
       tr: Makılî ve tipografi, afiş, arayüz ve sosyal medya tasarımı.
@@ -114,12 +116,13 @@ links:
       - { label: dribbble,  handle: "@abdullahoguk", url: "https://dribbble.com/abdullahoguk" }
 
   - id: photo
+    icon: camera
     title: { tr: fotoğraf, en: photography }
     blurb:
       tr: Sokak, manzara ve gündelik anlar. Doğal güneş ışığını severim, peşinden giderim.
       en: Street, landscape and everyday moments, always chasing natural light.
     items:
-      - { label: instagram, handle: "@abdullahoguk", url: "https://www.instagram.com/abdullahoguk" }
+      - { label: instagram, handle: "@abdullahoguk", url: "https://www.instagram.com/abdullahoguk", primary: true }
       - { label: unsplash,  handle: "@abdullahoguk", url: "https://unsplash.com/@abdullahoguk" }
       - { label: pexels,    handle: "@abdullahoguk", url: "https://www.pexels.com/@abdullahoguk" }   # TODO: kullanıcı adını doğrula
       - { label: flickr,    handle: "archive",       url: "https://www.flickr.com/photos/83093199@N08/" }
@@ -127,17 +130,18 @@ links:
       # - { label: fotoblog, handle: "photo journal", url: "https://..." }
 
   - id: other
+    icon: grid
     title: { tr: diğer, en: other }
     blurb:
       tr: Okuduklarım, izlediklerim, kullandıklarım, biriktirdiğim linkler ve diğer hesaplarım.
       en: Books, films, gear, bookmarks and everything else.
     items:
-      - { label: okuduklarım,   handle: "read",      url: "/read/" }
-      - { label: izlediklerim,  handle: "watched",   url: "/watched/" }
-      - { label: dinlediklerim, handle: "listens",   url: "/listens/" }
-      - { label: kullandıklarım, handle: "uses",     url: "/uses/" }
-      - { label: yer imleri,    handle: "bookmarks", url: "/bookmarks/" }
-      - { label: x,          handle: "@abdullahoguk", url: "https://x.com/abdullahoguk", primary: true }
+      - { label: okuduklarım,   handle: "read",      url: "/read/", icon: book }
+      - { label: izlediklerim,  handle: "watched",   url: "/watched/", icon: film }
+      - { label: dinlediklerim, handle: "listens",   url: "/listens/", icon: music }
+      - { label: kullandıklarım, handle: "uses",     url: "/uses/", icon: tool }
+      - { label: yer imleri,    handle: "bookmarks", url: "/bookmarks/", icon: bookmark }
+      - { label: x,          handle: "@abdullahoguk", url: "https://x.com/abdullahoguk" }
       - { label: goodreads,  handle: "what I read",   url: "https://www.goodreads.com/user/show/30322141-abdullah" }
       - { label: soundcloud, handle: "abdullahoguk",  url: "https://soundcloud.com/abdullahoguk" }
       - { label: telegram,   handle: "@abdullahoguk", url: "https://t.me/abdullahoguk", sameAs: false }

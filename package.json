@@ -9,7 +9,8 @@
     "new:post": "node scripts/new-post.js",
     "goodreads": "node scripts/goodreads-import.js",
     "panel": "node scripts/panel/server.js",
-    "raindrop": "node scripts/raindrop-import.js"
+    "raindrop": "node scripts/raindrop-import.js",
+    "imdb": "node scripts/imdb-ratings.js"
   },
   "engines": {
     "node": ">=20"
