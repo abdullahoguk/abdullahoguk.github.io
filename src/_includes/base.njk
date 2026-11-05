@@ -22,7 +22,7 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2efe8">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/img/avatar-logo.png">
-  <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="{{ '/css/site.css' | v }}">
 
   {%- if schemaKind == "post" %}{% set ogType = "article" %}{% elif page.url == "/" %}{% set ogType = "profile" %}{% else %}{% set ogType = "website" %}{% endif %}
   <meta property="og:type" content="{{ ogType }}">
@@ -87,12 +87,12 @@
     <span><a href="/resume/">resume</a> / <a href="/feed.xml">rss</a> / <a href="/llms.txt">llms.txt</a></span>
   </footer>
 
-  <script src="/js/theme.js" defer></script>
+  <script src="{{ '/js/theme.js' | v }}" defer></script>
   {%- if scene %}
   {%- if site.scenePicker %}
   <button class="scene-switch" type="button" hidden aria-label="change background scene"><span class="muted">scene</span> <span data-scene-label></span></button>
   {%- endif %}
-  <script src="/js/scene.js" defer></script>
+  <script src="{{ '/js/scene.js' | v }}" defer></script>
   {%- endif %}
 </body>
 </html>

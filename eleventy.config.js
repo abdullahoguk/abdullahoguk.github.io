@@ -1,6 +1,8 @@
 import yaml from "js-yaml";
 import { buildGraph, mappers, plain } from "./lib/schema.js";
 import { icon } from "./lib/icons.js";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 
 export const config = {
   dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
@@ -110,6 +112,14 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("sortBy", (arr, key) => [...(arr || [])].sort((a, b) => sortable(b[key]).localeCompare(sortable(a[key]))));
   // {% jsonld %} — emits the page's schema.org @graph (see lib/schema.js)
   eleventyConfig.addShortcode("icon", icon);
+
+  // Cache busting: /css/site.css → /css/site.css?v=<content hash>
+  eleventyConfig.addFilter("v", (path) => {
+    try {
+      const hash = createHash("md5").update(readFileSync(`src/public${path}`)).digest("hex").slice(0, 8);
+      return `${path}?v=${hash}`;
+    } catch { return path; }
+  });
 
   eleventyConfig.addShortcode("jsonld", function () {
     const d = this.ctx;
